@@ -11,12 +11,17 @@
 
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
-
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <!-- Blog feed -->
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
 
+
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div id="main" role="main">
+      <%= partial "layouts/partials/nav" %>
+      <%= yield %>
+      <%= partial "layouts/partials/footer" %>
+    </div>
   </body>
 </html>

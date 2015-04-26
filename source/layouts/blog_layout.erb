@@ -17,8 +17,12 @@
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
 
-  <h1>Blog</h1>
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <h1>Blog</h1>
+    <div id="main" role="main">
+      <%= partial "layouts/partials/nav" %>
+      <%= yield %>
+      <%= partial "layouts/partials/footer" %>
+    </div>
   </body>
 </html>
