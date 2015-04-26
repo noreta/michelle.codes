@@ -9,3 +9,6 @@ gem 'middleman-livereload', '~> 3.4.2'
 
 # Blog plugin
 gem 'middleman-blog', '~> 3.5.3'
+
+# Build XML files
+gem 'builder', '~> 3.2.2'
