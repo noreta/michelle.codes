@@ -29,3 +29,17 @@ button {
     opacity: 0.5;
   }
 }
+
+.primary-cta {
+  background-color: $base-accent-color;
+  border-radius: $base-border-radius;
+  color: $white;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 10px;
+
+  &:hover {
+    background-color: tint($base-accent-color, 20%);
+    color: $white;
+  }
+}

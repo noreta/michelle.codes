@@ -1,16 +1,25 @@
-nav {
-  border-bottom: 1px solid $base-border-color;
-  margin: em(30) 0;
-
-  ul {
-    display: inline-block;
-    margin-bottom: em(10);
-  }
+.global-nav {
+  height: 4em;
+  padding: 1em 0;
+  position: relative;
+  font-size: 14px;
 }
 
-.blog-title {
-  font-size: 1.4em;
-  font-weight: 700;
-  letterspacing: 4px;
-  text-transform: uppercase;
+.nav-logo img {
+  width: 36px;
+}
+
+.nav-menu-left {
+  float: left;
+  display: inline-block;
+}
+
+.nav-menu-right {
+  float: right;
+  margin-top: 12px;
+}
+
+.nav-menu-item {
+  display: inline-block;
+  margin-left: 20px;
 }

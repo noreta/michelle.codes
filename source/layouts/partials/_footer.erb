@@ -1,26 +1,62 @@
 <footer>
-  <ul class="large-column">
-    <li><h5 class="heading">Recent Articles</h5></li>
-    <li>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li>
-            <%= link_to article.title, article %>
-            <span><%= article.date.strftime('%b %e') %></span>
-          </li>
-        <% end %>
-      </ol>
-    </li>
-  </ul>
+  <div class="wrap-container">
+  <!-- <ul class="large&#45;column"> -->
+  <!--   <li><h5 class="heading">Recent Articles</h5></li> -->
+  <!--   <li> -->
+  <!--     <ol> -->
+  <!--       <% blog.articles[0...10].each do |article| %> -->
+  <!--         <li> -->
+  <!--           <%= link_to article.title, article %> -->
+  <!--           <span><%= article.date.strftime('%b %e') %></span> -->
+  <!--         </li> -->
+  <!--       <% end %> -->
+  <!--     </ol> -->
+  <!--   </li> -->
+  <!-- </ul> -->
 
-  <ul class="small-column">
-    <li><h5 class="heading">Tags</h5></li>
-    <li>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-        <% end %>
-      </ol>
-    </li>
-  <ul>
+  <!-- <ul class="small&#45;column"> -->
+  <!--   <li><h5 class="heading">Tags</h5></li> -->
+  <!--   <li> -->
+  <!--     <ol> -->
+  <!--       <% blog.tags.each do |tag, articles| %> -->
+  <!--         <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li> -->
+  <!--       <% end %> -->
+  <!--     </ol> -->
+  <!--   </li> -->
+  <!-- <ul> -->
+
+    <div class="footer-main">
+      <h4>
+        Currently in San Francisco
+      </h4>
+      <p>
+        Want to chat? Send me a <a href="mailto:michelle.ann.harvey@gmail.com">note</a> or <a href="http://twitter.com/mvenetucci" target="_blank">tweet</a>.
+      </p>
+    </div>
+
+    <div class="footer-left">
+      <p>
+        Site built with <a href="http://bourbon.io/" target="_blank">Bourbon</a>, <a href="http://neat.bourbon.io/" target="_blank">Neat</a>, and <a href="https://middlemanapp.com/" target="_blank">Middleman</a>.
+      </p>
+      <p>
+        Source code on <a href="https://github.com/venetucci/michelle.codes" target="_blank">Github</a>.
+      </p>
+    </div>
+    <div class="footer-right">
+      <ul>
+        <li>
+          <a href="http://twitter.com/mvenetucci" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a href="http://dribbble.com/mvenetucci" target="_blank">Dribbble</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/venetucci" target="_blank">Linkedin</a>
+        </li>
+      </ul>
+      <p>
+        © Michelle Venetucci 2015
+      </p>
+    </div>
+  </div>
 </footer>

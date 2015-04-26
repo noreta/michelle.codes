@@ -1,7 +1,0 @@
----
-title: test
-date: 2015-04-25 20:15 PDT
-tags: example
----
-
-This is the first article!
