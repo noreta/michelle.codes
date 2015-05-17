@@ -43,7 +43,7 @@ ol {
   position: relative;
 
   @include media($medium-screen-up) {
-    padding: 5em em(10);
+    padding: 8em em(10);
   }
 }
 
