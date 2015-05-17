@@ -15,14 +15,17 @@ process of getting an app up and running.
 #### Tools I Use
 
 Here are the tools you’ll need to complete this tutorial: Terminal, Rubymine,
-Ruby on Rails, Git, Github, Heroku, and Heroku Toolbelt. An old fashioned is
-optional.
+Ruby on Rails, Git, Github, Heroku, and Heroku Toolbelt.
 
 __Ruby On Rails And Github__
 
+<img src="/images/blog/rails-1.jpg" alt="nutella" class="post-image-inline" />
+
+<p class="post-inline">
 Ruby on Rails is a great framework that is fantastic for quick prototyping. It’s
 a favorite of mine when doing small projects with an even smaller team, since it
 allows for a quick development cycle.
+</p>
 
 GitHub is a service that hosts your versioned code, helps you collaborate on
 projects, and provides the ability to view and participate in open source
@@ -38,11 +41,15 @@ There are just a few commands to create a new rails app. Open up your terminal a
 ```
 $ rails new [ProjectName]
 ```
+
 e.g. ``` $ rails new Blog```
+
 ```
 $ cd [ProjectName]
 ```
+
 e.g. ``` $ cd Blog ```
+
 ```
 $ git init
 ```
@@ -109,11 +116,13 @@ Before you push, you need to tell Git what server you want to push to. To do thi
 
 First, create a remote repository on Github by clicking on the drop-down in the upper right, next to the “+”. Here’s a screenshot:
 
-create repo
+<img src="/images/blog/rails-2.png" alt="nutella" class="post-image-center
+image-outline" />
 
 After you name your repo (mine is just called “testing”), it will tell you what to enter. You’re going to be pushing an existing repository. Here’s a screenshot:
 
-remote
+<img src="/images/blog/rails-5.png" alt="nutella" class="post-image-center
+image-outline" />
 
 And here’s what you input in your terminal:
 
@@ -129,7 +138,10 @@ git push -u origin master
 
 #### Heroku
 
-Heroku_logoHeroku is a cloud application platform that helps developers build and deploy web apps. It deals with server management, deployment, and scaling. The Heroku business model is pretty cool: the service is free for apps with low traffic, making it a great option for apps that may not be live for a while or won’t be getting high levels of traffic to offset hosting costs. As traffic goes up, so does pricing. Seems fair, right?
+<img src="/images/blog/rails-3.png" alt="nutella" class="post-image-inline" />
+
+<p class="post-inline">
+Heroku is a cloud application platform that helps developers build and deploy web apps. It deals with server management, deployment, and scaling.</p> The Heroku business model is pretty cool: the service is free for apps with low traffic, making it a great option for apps that may not be live for a while or won’t be getting high levels of traffic to offset hosting costs. As traffic goes up, so does pricing. Seems fair, right?
 
 But the best part about Heroku is how easy it is to deploy your app.
 
@@ -137,7 +149,9 @@ __First, install the Heroku Toolbelt__
 
 The Toolbelt makes sure you can access the command-line tool, which helps you do things like create apps, configure add-ons, check your server logs, and push to Heroku.
 
-Install Toolbelt here.
+[Install Toolbelt here].
+
+[Install Toolbelt here]: https://toolbelt.heroku.com/
 
 __Login to Heroku__
 
@@ -165,7 +179,9 @@ This tells you where you are in the system. If you aren’t in the app directory
 $ cd [NameGoesHere]
 ```
 
-Your app is probably running on SQLite (the Rails default), but to run on Heroku it needs Postgres. If you want to know more about why you can’t run SQLite on Heroku, read about it here. You can actually keep SQLite on your local server and add Postgres to your production server. Locate SQLite in your Gemfile and update it to the following:
+Your app is probably running on SQLite (the Rails default), but to run on Heroku it needs Postgres. If you want to know more about why you can’t run SQLite on Heroku, read about it [here]. You can actually keep SQLite on your local server and add Postgres to your production server. Locate SQLite in your Gemfile and update it to the following:
+
+[here]: https://devcenter.heroku.com/articles/sqlite3
 
 ```
 group :development do
@@ -179,9 +195,11 @@ gem 'pg', '~> 0.17.1'
 end
 ```
 
-Tutorials will often tell you that you just need to add gem ‘pg’, but it’s a good idea to make sure you add the version to each of your gems. If you ever need to find that information, search for rubygems.org/gems/[gemname]. For example, if you visit rubygems.org/gems/pg, scroll down to see the versioned copy. Just click that little clipboard icon and you’re good to go!
+Tutorials will often tell you that you just need to add gem ‘pg’, but it’s a good idea to make sure you add the version to each of your gems. If you ever need to find that information, search for rubygems.org/gems/[gemname]. For example, if you visit [rubygems.org/gems/pg], scroll down to see the versioned copy. Just click that little clipboard icon and you’re good to go!
 
->>>>>>>>gem_pg
+[rubygems.org/gems/pg]: https://rubygems.org/gems/pg
+
+<img src="/images/blog/rails-4.jpg" alt="nutella" class="post-image-center" />
 
 Then run:
 
@@ -193,7 +211,10 @@ Do this anytime you add a new gem!
 
 __Add rails_12factor gem__
 
-To run Rails on Heroku, your app must also use the rails_12factor gem in the Gemfile production group. I strongly encourage everyone to read more about the 12-factor app, here. Remember to get the versioned gem, here.
+To run Rails on Heroku, your app must also use the rails_12factor gem in the Gemfile production group. I strongly encourage everyone to read more about the [12-factor app]. Remember to get the [versioned gem] as well.
+
+[12-factor app]: http://12factor.net/
+[versioned gem]: https://rubygems.org/gems/rails_12factor
 
 You could add each production group gem to the production group individually, like this:
 
@@ -201,18 +222,21 @@ You could add each production group gem to the production group individually, li
 gem 'rails_12factor', group: :production
 ```
 
-But it seems more streamlined to just add them at the same time. We did this with the Postgres gem by adding it after group :production do. Now, just add the rails_12factor gem after the Postgres gem (before the end, of course):
+But it seems more streamlined to just add them at the same time. We did this with the Postgres gem by adding it after ```group :production do```. Now, just add the rails_12factor gem after the Postgres gem (before the ```end```, of course):
 
-__Heroku 12 factor app__
->>>>gem 'rails_12factor', '~> 0.0.2'
+```
+gem 'rails_12factor', '~> 0.0.2'
+```
 
-Then run $ bundle install. Do this anytime you add a new gem!
+Then run ```$ bundle install```. Do this anytime you add a new gem!
 
 __Add a unicorn to your code__
 
 No, seriously.
 
-Rails is automatically loaded with webrick as the default web server. It’s made for development, but not for production environments. Heroku allows you to run a better web server called Unicorn, so they suggest switching to that. Locate the version of unicorn at rubygems.org/gems/unicorn and add it to your Gemfile in the production group under rails_12factor.
+Rails is automatically loaded with webrick as the default web server. It’s made for development, but not for production environments. Heroku allows you to run a better web server called Unicorn, so they suggest switching to that. Locate the version of unicorn at [rubygems.org/gems/unicorn] and add it to your Gemfile in the production group under rails_12factor.
+
+[rubygems.org/gems/unicorn]: https://rubygems.org/gems/unicorn
 
 ```
 gem 'unicorn', '~> 4.8.3', group: :production
@@ -257,7 +281,9 @@ ActiveRecord::Base.establish_connection
 end
 ```
 
-You don’t need to understand this in detail at right now, but if you’re curious, read more in the Unicorn documentation.
+You don’t need to understand this in detail at right now, but if you’re curious, read more in the [Unicorn documentation].
+
+[Unicorn documentation]: https://devcenter.heroku.com/articles/rails-unicorn
 
 __Restart your server after adding gems__
 
@@ -271,7 +297,9 @@ $ rails server
 
 __Create a Procfile__
 
-The final step is to make sure Heroku knows how to run your app, and to do this you need to create a Procfile in the root of the application directory. Create a file called ‘Procfile’ (make sure the first letter is uppercase) and insert this:
+The final step is to make sure Heroku knows how to run your app, and to do this you need to create a [Procfile] in the root of the application directory. Create a file called ‘Procfile’ (make sure the first letter is uppercase) and insert this:
+
+[Procfile]: https://devcenter.heroku.com/articles/procfile
 
 ```
 web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
@@ -306,12 +334,16 @@ $ git push heroku
 - Commit often! Committing frequently is a good practice; it helps you catch issues quicker and makes sure all your code is up-to-date and versioned.
 - Deploy as early as possible: You want to get something into production as soon as possible, and iterate with working code. You’ll catch bugs on your production server right when you commit them, instead of deploying your entire app all at once when you want to go live and needing to search through all of your code for the source of bugs.
 - $ Bundle Install and restart your server after you add gems. Just do it.
-- Add the version of your gems, which you can locate at rubygems.org/gems
+- Add the version of your gems, which you can locate at [rubygems.org/gems]
 
-__Resources and Further Reading:__
->>>>
-Here’s a great git cheat sheet from Github
-Extensive explanation on getting started in Rails 4 on Heroku
-The 12 factor app
-SQLite on Heroku
-Locate all Ruby gems
+[rubygems.org/gems]: https://rubygems.org/gems
+
+
+#### Resources and Further Reading:
+
+- [Here’s a great git cheat sheet from
+  Github](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+- [Extensive explanation on getting started in Rails 4 on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4)
+- [The 12 factor app](http://12factor.net/)
+- [SQLite on Heroku](https://devcenter.heroku.com/articles/sqlite3)
+- [Locate all Ruby gems](https://rubygems.org/gems)
