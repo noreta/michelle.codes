@@ -10,8 +10,14 @@
   }
 
   &-item {
-    display: inline-block;
-    margin-left: 20px;
+    display: block;
+    text-align: center;
+
+    @include media($medium-screen-up) {
+      display: inline-block;
+      margin-left: 20px;
+      text-align: left;
+    }
 
     & a {
       color: $white;

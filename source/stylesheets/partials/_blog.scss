@@ -28,6 +28,10 @@
   padding-bottom: 30px;
   list-style-type: none;
 
+  &-image {
+    width: 100%;
+  }
+
   &-inline {
     @include span-columns(12 of 12);
 

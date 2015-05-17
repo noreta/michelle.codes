@@ -1,8 +1,13 @@
 .global-nav {
-  height: 4em;
-  padding: 1em 0;
+  height: 6em;
+  padding: 1em 1em;
   position: relative;
   font-size: 14px;
+
+  @include media($medium-screen-up) {
+    height: 4em;
+    padding: 1em 0;
+  }
 
   &-border {
     border-bottom: 1px solid rgb(241, 241, 241);
