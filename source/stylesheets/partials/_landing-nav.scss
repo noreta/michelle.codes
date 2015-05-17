@@ -12,7 +12,10 @@
   &-item {
     display: inline-block;
     margin-left: 20px;
-    color: $white;
+
+    & a {
+      color: $white;
+    }
 
     &:hover a {
       color: $white;
