@@ -79,9 +79,9 @@
 .hero-laptop {
   background-image: url("images/hero-laptop.png");
   background-repeat: no-repeat;
-  background-size: 290px;
+  background-size: 230px;
   height: 168px;
-  margin-left: 40px;
+  margin-left: 1em;
   width: 495px;
 
   @include media($medium-screen-up) {
@@ -354,14 +354,24 @@
 
   &-header, &-header-subtitle {
     display: inline-block;
-    padding-right: 7px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
+
+    @include media($medium-screen-up) {
+      padding-right: 7px;
+      padding-bottom: 25px;
+    }
   }
 
   &-cta {
     color: $white;
-    float: right;
+    float: left;
     margin-top: 0;
+    margin-bottom: 20px;
+
+    @include media($medium-screen-up) {
+      float: right;
+      margin-bottom: 0;
+    }
   }
 }
 

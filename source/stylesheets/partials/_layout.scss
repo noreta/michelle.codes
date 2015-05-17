@@ -26,6 +26,7 @@ ol {
 
 .wrap-container {
   @include outer-container;
+  padding: 0 $gutter;
 
   @include media($medium-screen-up){
     @include outer-container;
@@ -49,10 +50,10 @@ ol {
 
 .blog-container {
   @include outer-container;
-  padding: 8rem 11rem 0;
+  padding: 3em $gutter;
 
   @include media($medium-screen-up){
     @include outer-container;
-    // @include span-columns(6 of 12);
+    padding: 8rem 11rem 0;
   }
 }
