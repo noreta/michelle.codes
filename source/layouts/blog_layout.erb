@@ -8,7 +8,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "Blog" %></title>
 
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
@@ -17,13 +17,25 @@
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
 
+<div id="blog" role="main" class="blog-container">
+  <section class="blog-header">
+    <%= image_tag "coffee-blog.png", class: "blog-header-logo" %>
+    <div class="blog-header-text">
+      <h1 class="blog-header-text-title">
+        General Thoughts
+      </h1>
+      <p class="blog-header-text-subtitle">
+        Musings about tech, design, and life in the Bay
+      </p>
+    </div>
+  </section>
   <body class="<%= page_classes %>">
-    <h1>Blog</h1>
-    <div id="main" role="main">
       <%= partial "layouts/partials/nav" %>
+      <h3 class="post-title"><%= current_article.title %></h3>
+      <h5 class="post-date"><%= current_article.date.strftime('%b %e, %Y') %></h5>
       <%= yield %>
-      <%= partial "layouts/partials/footer" %>
-      <%= partial "layouts/partials/analytics" %>
     </div>
   </body>
+<%= partial "layouts/partials/footer" %>
+<%= partial "layouts/partials/analytics" %>
 </html>

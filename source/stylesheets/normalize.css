@@ -153,6 +153,11 @@ pre,
 samp {
     font-family: monospace, serif;
     font-size: 1em;
+    background-color: #f1f1f1;
+    padding: 3px 5px;
+    border-radius: 2px;
+    margin-left: 15px;
+    margin-bottom: 5px;
 }
 
 /*
