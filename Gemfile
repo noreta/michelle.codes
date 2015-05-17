@@ -19,3 +19,6 @@ gem 'middleman-blog', '~> 3.5.3'
 
 # Build XML files
 gem 'builder', '~> 3.2.2'
+
+# Article summaries
+gem 'nokogiri', '~> 1.6.6.2'

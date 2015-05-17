@@ -4,7 +4,7 @@ date: 2015-04-25 20:15 PDT
 tags: tutorial, development
 ---
 
-<img src="images/blog/seven-ounces-screenshot.png" alt="nutella" class="post-image" />
+<img src="/images/blog/seven-ounces-screenshot.png" alt="nutella" class="post-image" />
 
 I love how interactive web apps can be, and the amount of creativity and control
 you can have over a system when you know how set it up as an app. However, if
