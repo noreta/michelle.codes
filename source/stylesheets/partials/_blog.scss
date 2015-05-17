@@ -18,33 +18,6 @@
   margin-top: 40px;
 }
 
-.blog-header {
-  margin-bottom: 80px;
-  padding-left: 6%;
-
-  &-logo {
-    float: left;
-  }
-
-  &-text {
-    display: inline-block;
-    margin-left: 30px;
-
-    &-title {
-      margin: 20px 0 5px;
-
-      @include media($medium-screen-up) {
-      }
-    }
-
-    &-subtitle {
-      display: inline-block;
-      margin-bottom: 30px;
-    }
-  }
-
-}
-
 .post {
   padding-bottom: 30px;
 

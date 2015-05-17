@@ -17,20 +17,9 @@
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
 
+<%= partial "layouts/partials/nav" %>
 <div id="blog" role="main" class="blog-container">
-  <section class="blog-header">
-    <%= image_tag "coffee-blog.png", class: "blog-header-logo" %>
-    <div class="blog-header-text">
-      <h1 class="blog-header-text-title">
-        General Thoughts
-      </h1>
-      <p class="blog-header-text-subtitle">
-        Musings about tech, design, and life in the Bay
-      </p>
-    </div>
-  </section>
   <body class="<%= page_classes %>">
-      <%= partial "layouts/partials/nav" %>
       <h3 class="post-title"><%= current_article.title %></h3>
       <h5 class="post-date"><%= current_article.date.strftime('%b %e, %Y') %></h5>
       <%= yield %>
