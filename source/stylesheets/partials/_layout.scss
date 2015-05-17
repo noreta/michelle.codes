@@ -27,7 +27,6 @@ ol {
 .wrap-container {
   @include outer-container;
 
-
   @include media($medium-screen-up){
     @include outer-container;
   }
@@ -44,7 +43,16 @@ ol {
   position: relative;
 
   @include media($medium-screen-up) {
-    padding: 8em em(10);
+    padding: 5em em(10);
   }
 }
 
+.blog-container {
+  @include outer-container;
+  padding: 8rem 11rem 0;
+
+  @include media($medium-screen-up){
+    @include outer-container;
+    // @include span-columns(6 of 12);
+  }
+}
