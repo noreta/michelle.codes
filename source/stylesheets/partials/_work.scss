@@ -1,0 +1,51 @@
+.work {
+  
+  &-text {
+    @include span-columns(12 of 12);
+    margin: 40px 0;
+
+    @include media($medium-screen-up) {
+      @include span-columns(8 of 12);
+      @include shift(2);
+      margin-right: 17%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    &-block {
+      margin: 40px 0;
+    }
+  }
+
+  &-image {
+    
+
+    &-nav {
+      height: 1.6875em;
+      width: 100%;
+      background: url("/images/nav.jpg");
+      background-repeat: no-repeat;
+      display: block;
+      margin-bottom: -2px;
+    }
+
+    &-full {
+
+      position: relative;
+
+    }
+  }
+
+  &-title {
+    font-weight: 200;
+    font-size: 1.5em;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+}
+
+.work-image-medium {
+  margin: 0 auto;
+  width: 70%;
+}
+
