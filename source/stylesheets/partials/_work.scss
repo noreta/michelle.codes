@@ -1,0 +1,92 @@
+.work {
+
+  &-subtitle {
+    text-align: center;
+    margin: 40px 0 20px;
+    text-transform: capitalize;
+
+    @include media($medium-screen-up) {
+      margin: 100px 0 40px;
+    }
+  }
+  
+  &-text {
+    @include span-columns(12 of 12);
+    float: none;
+
+    @include media($medium-screen-up) {
+      @include span-columns(8 of 12);
+      @include shift(2);
+      float: none;
+      margin-bottom: 20px;
+      margin-right: 17%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    &-block {
+      margin: 20px 0;
+
+      @include media($medium-screen-up) {
+        margin: 0 0 20px;
+      }
+    }
+  }
+
+  &-cta {
+
+    &-container {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    &-primary {
+      @include button-filled;
+      margin-right: 10px;
+    }
+
+    &-secondary {
+      @include button-outline;
+    }
+  }
+
+  &-image {
+
+    &-nav {
+      background: url("/images/nav.jpg");
+      background-repeat: no-repeat;
+      border-radius: 5px 5px 0 0;
+      display: block;
+      height: 1.6875em;
+      margin-bottom: -2px;
+      width: 100%;
+    }
+
+    &-full {
+      position: relative;
+    }
+
+    &-medium {
+      margin: 0 auto;
+      width: 100%;
+
+      @include media($medium-screen-up) {
+        width: 70%;
+      }
+    }
+  }
+
+  &-title {
+    font-weight: 200;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+
+    &-secondary {
+      text-align: center;
+      margin: 10px 0;
+      text-transform: capitalize;
+    }
+  }
+}
+
