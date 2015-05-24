@@ -4,7 +4,7 @@ date: 2015-04-25 20:15 PDT
 tags: tutorial, development
 ---
 
-<img src="/images/blog/seven-ounces-screenshot.png" alt="nutella" class="post-image" />
+<%= image_tag "/images/blog/seven-ounces-screenshot.png", alt: "nutella", class: "post-image" %>
 
 I love how interactive web apps can be, and the amount of creativity and control
 you can have over a system when you know how set it up as an app. However, if
@@ -19,7 +19,7 @@ Ruby on Rails, Git, Github, Heroku, and Heroku Toolbelt.
 
 __Ruby On Rails And Github__
 
-<img src="/images/blog/rails-1.jpg" alt="nutella" class="post-image-inline" />
+<%= image_tag "/images/blog/rails-1.jpg", alt: "rails", class: "post-image-inline" %>
 
 <p class="post-inline">
 Ruby on Rails is a great framework that is fantastic for quick prototyping. It’s
@@ -116,13 +116,11 @@ Before you push, you need to tell Git what server you want to push to. To do thi
 
 First, create a remote repository on Github by clicking on the drop-down in the upper right, next to the “+”. Here’s a screenshot:
 
-<img src="/images/blog/rails-2.png" alt="nutella" class="post-image-center
-image-outline" />
+<%= image_tag "/images/blog/rails-2.png", alt: "rails", class: "post-image-center image-outline" %>
 
 After you name your repo (mine is just called “testing”), it will tell you what to enter. You’re going to be pushing an existing repository. Here’s a screenshot:
 
-<img src="/images/blog/rails-5.png" alt="nutella" class="post-image-center
-image-outline" />
+<%= image_tag "/images/blog/rails-5.png", alt: "rails", class: "post-image-center image-outline" %>
 
 And here’s what you input in your terminal:
 
@@ -138,7 +136,7 @@ git push -u origin master
 
 #### Heroku
 
-<img src="/images/blog/rails-3.png" alt="nutella" class="post-image-inline" />
+<%= image_tag "/images/blog/rails-3.png", alt: "rails", class: "post-image-inline" %>
 
 <p class="post-inline">
 Heroku is a cloud application platform that helps developers build and deploy web apps. It deals with server management, deployment, and scaling.</p> The Heroku business model is pretty cool: the service is free for apps with low traffic, making it a great option for apps that may not be live for a while or won’t be getting high levels of traffic to offset hosting costs. As traffic goes up, so does pricing. Seems fair, right?
@@ -199,7 +197,7 @@ Tutorials will often tell you that you just need to add gem ‘pg’, but it’s
 
 [rubygems.org/gems/pg]: https://rubygems.org/gems/pg
 
-<img src="/images/blog/rails-4.jpg" alt="nutella" class="post-image-center" />
+<%= image_tag "/images/blog/rails-4.jpg", alt: "rails", class: "post-image-center" %>
 
 Then run:
 
