@@ -8,7 +8,7 @@ tags: design, work
 </div>
 <img src="/images/middleman/middleman.gif" alt="san francisco" class="post-image image-outline" />
 
-I've started putting project case studies up on the site, and I just finished writing one for the re-design of the <a href="/work/middleman" target="_blank">Middleman website</a>.
+I've started putting project case studies up on the site, and I just finished writing one for the re-design of the <a href="/work/middleman">Middleman website</a>.
 
 Middleman is a static site generator using all the shortcuts and tools in modern web development. It's built on Ruby, and can be used to get static sites up and running quickly and painlessly.
 

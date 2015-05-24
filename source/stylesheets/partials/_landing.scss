@@ -96,7 +96,7 @@
   display: none;
 
   @include media($medium-screen-up) {
-    background-image: url("images/hero-coffee.png");
+    background-image: url("/images/coffee-froth.gif");
     background-repeat: no-repeat;
     background-size: 124px;
     display: block;
@@ -244,7 +244,7 @@
     @include media($medium-screen-up) {
       @include span-columns(4 of 12);
       @include shift(1);
-      background-image: url("images/coffee-large.png");
+      background-image: url("/images/coffee-froth-large.gif");
       background-repeat: no-repeat;
       background-size: 270px;
       display: inline-block;
@@ -509,3 +509,4 @@ a.expand-button {
 #slide-up .landing-work-featured-image.hover .overlay {
   height: 100%;
 }
+
