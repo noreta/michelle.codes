@@ -10,8 +10,14 @@ $(document).ready(function(){
     if ($image.prop("complete")) {
       markImageAsLoaded($image);
     } else {
-      $image.load(markImageAsLoaded);
+      $image.load(function(){
+        markImageAsLoaded(this);
+      });
     }
+  });
+
+  $(".js-static-load-animations").each(function(index, image) {
+    setTimeout(function() { markImageAsLoaded(image); }, 0) 
   });
 
 });

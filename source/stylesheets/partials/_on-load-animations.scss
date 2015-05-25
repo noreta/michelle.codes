@@ -1,85 +1,44 @@
 .hero-laptop.loaded {
-  animation-duration: 700ms;
-  animation-delay: 200ms;
-  animation-name: slidein1;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+  transition-duration: 700ms;
+  transition-delay: 200ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+  transform: translate(50px, 230px);
 }
 
-@keyframes slidein1 {
-  from {
-    margin-top: -1800px;
-  }
-
-  to {
-    margin-top: -200px;
-  }
-}
 
 .hero-desktop.loaded {
-  animation-duration: 700ms;
-  animation-delay: 400ms;
-  animation-name: slidein2;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
-}
-
-@keyframes slidein2 {
-  from {
-    margin-top: -1800px;
-  }
-
-  to {
-    top: -372px;
-  }
+  transition-duration: 700ms;
+  transition-delay: 400ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+  transform: translate(-10px, 500px);
 }
 
 .hero-coffee.loaded {
-  animation-duration: 700ms;
-  animation-delay: 800ms;
-  animation-name: slidein3;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
-}
-
-@keyframes slidein3 {
-  from {
-    right: -800px;
-  }
-
-  to {
-    right: 80px;
-  }
+  transition-duration: 700ms;
+  transition-delay: 900ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+  transform: translate(-300px, -5px);
 }
 
 .hero-mouse.loaded {
-  animation-duration: 700ms;
-  animation-delay: 600ms;
-  animation-name: slidein5;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
-}
-
-@keyframes slidein5 {
-  from {
-    right: -800px;
-  }
-
-  to {
-    right: 222px;
-  }
+  transition-duration: 700ms;
+  transition-delay: 600ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+  transform: translate(-410px, -5px);
 }
 
 .hero-notebook.loaded {
   transition-duration: 700ms;
-  transition-delay: 600ms;
-  transition-property: slidein4;
-  // transition-name: slidein4;
+  transition-delay: 700ms;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+  transform: translate(210px, -35px);
 }
 
-@keyframes slidein4 {
-  from {
-    left: -800px;
-  }
 
-  to {
-    left: 80px;
-  }
+.hero-keyboard.loaded {
+  transition-duration: 700ms;
+  transition-delay: 1000ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+  transform: translate(0, -75px);
 }
+
