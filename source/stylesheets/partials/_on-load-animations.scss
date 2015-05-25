@@ -1,0 +1,85 @@
+.hero-laptop.loaded {
+  animation-duration: 700ms;
+  animation-delay: 200ms;
+  animation-name: slidein1;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+}
+
+@keyframes slidein1 {
+  from {
+    margin-top: -1800px;
+  }
+
+  to {
+    margin-top: -200px;
+  }
+}
+
+.hero-desktop.loaded {
+  animation-duration: 700ms;
+  animation-delay: 400ms;
+  animation-name: slidein2;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+}
+
+@keyframes slidein2 {
+  from {
+    margin-top: -1800px;
+  }
+
+  to {
+    top: -372px;
+  }
+}
+
+.hero-coffee.loaded {
+  animation-duration: 700ms;
+  animation-delay: 800ms;
+  animation-name: slidein3;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+}
+
+@keyframes slidein3 {
+  from {
+    right: -800px;
+  }
+
+  to {
+    right: 80px;
+  }
+}
+
+.hero-mouse.loaded {
+  animation-duration: 700ms;
+  animation-delay: 600ms;
+  animation-name: slidein5;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+}
+
+@keyframes slidein5 {
+  from {
+    right: -800px;
+  }
+
+  to {
+    right: 222px;
+  }
+}
+
+.hero-notebook.loaded {
+  transition-duration: 700ms;
+  transition-delay: 600ms;
+  transition-property: slidein4;
+  // transition-name: slidein4;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+}
+
+@keyframes slidein4 {
+  from {
+    left: -800px;
+  }
+
+  to {
+    left: 80px;
+  }
+}

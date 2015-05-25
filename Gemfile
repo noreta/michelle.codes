@@ -22,3 +22,6 @@ gem 'builder', '~> 3.2.2'
 
 # Article summaries
 gem 'nokogiri', '~> 1.6.6.2'
+
+# CSS Vendor Prefixes
+gem 'middleman-autoprefixer', '~> 2.4.3'

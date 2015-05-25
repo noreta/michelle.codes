@@ -68,6 +68,10 @@ page "/blog/feed.xml", layout: false
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+
+# css vendor prefixes
+activate :autoprefixer
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -102,4 +106,5 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
 end

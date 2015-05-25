@@ -4,13 +4,10 @@ title: Michelle Venetucci Harvey
 <%= partial "layouts/partials/landing-nav" %>
 
 <header class="hero">
-  <div class="hero-laptop">
-  </div>
-  <div class="hero-desktop">
-  </div>
-  <div class="hero-coffee">
-  </div>
-  <div class="hero-notebook">
+  <%= image_tag "hero-laptop.png", class: "js-load-animations hero-laptop" %>
+  <%= image_tag "hero-desktop.png", class: "js-load-animations hero-desktop" %>
+  <%= image_tag "coffee-froth.gif", class: "js-load-animations hero-coffee" %>
+  <div class="hero-notebook js-hero-notebook">
     <p class="hero-notebook-text">
       This site is a work in progress.
     </p>
@@ -26,56 +23,34 @@ title: Michelle Venetucci Harvey
       </div>
     </div>
   </div>
-  <div class="hero-mouse">
+  <%= image_tag "mouse.png", class: "js-load-animations hero-mouse" %>
+  <div class="hero-text">
+    <h1 class="hero-title">
+      Michelle Venetucci Harvey
+    </h1>
+    <h3 class="hero-subtitle">
+      Product Designer with an affinity for Swift, currently at <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>.
+    </h3>
   </div>
-  <h1 class="hero-title">
-    Michelle Venetucci Harvey
-  </h1>
-  <h3 class="hero-subtitle">
-    Product Designer with an affinity for Swift, currently at <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>.
-  </h3>
   <ul class="hero-keyboard">
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
-    <li class="hero-keyboard-key">
-    </li>
+    <% 14.times do %>
+      <li class="hero-keyboard-key">
+      </li>
+    <% end %>
   </ul>
 </header>
 
 <section class="landing-about wrap-container body-content-container">
-    <div class="landing-about-image">
-    </div>
     <div class="landing-about-text">
       <h3>
         I like to design and code
       </h3>
       <p class="landing-about-text-details">
-        I enjoy minimalism in life and the process of creation.
+        I enjoy user-centered design processes and building amazing products.
       </p>
+      <div class="landing-about-tools">
+        Tools of choice: Vim, Github, Bourbon, Neat, Xcode, Sketch, Illustrator, Trello
+      </div>
       <ul class="landing-about-skills skills-column-one">
         <li>
           <div class="landing-about-skill-background">
@@ -116,7 +91,33 @@ title: Michelle Venetucci Harvey
           <div class="landing-about-skill-meter swift">
           </div>
           <div class="landing-about-skill">
-            iOS/Swift/Xcode
+            iOS/Swift
+          </div>
+        </li>
+        <li>
+          <div class="landing-about-skill-background">
+          <div class="landing-about-skill-meter git">
+          </div>
+          <div class="landing-about-skill">
+            Git
+          </div>
+        </li>
+      </ul>
+      <ul class="landing-about-skills skills-column-three">
+        <li>
+          <div class="landing-about-skill-background">
+          <div class="landing-about-skill-meter haml">
+          </div>
+          <div class="landing-about-skill">
+            User Research
+          </div>
+        </li>
+        <li>
+          <div class="landing-about-skill-background">
+          <div class="landing-about-skill-meter swift">
+          </div>
+          <div class="landing-about-skill">
+            Interaction Design
           </div>
         </li>
         <li>
@@ -128,14 +129,6 @@ title: Michelle Venetucci Harvey
           </div>
         </li>
       </ul>
-      <div class="landing-about-tools">
-        Tools of choice: Vim, Github, Bourbon, Neat, Xcode, Sketch, Illustrator, Trello
-      </div>
-      <a href="/about">
-        <div class="primary-cta">
-          About Me
-        </div>
-      </a>
     </div>
 </section>
 
