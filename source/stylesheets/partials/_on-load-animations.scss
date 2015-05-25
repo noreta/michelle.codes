@@ -42,3 +42,11 @@
   transform: translate(0, -75px);
 }
 
+.hero-text.loaded {
+  transition-duration: 700ms;
+  transition-delay: 1400ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
+  transform: translate(0, 10px);
+  opacity: 1;
+}
+
