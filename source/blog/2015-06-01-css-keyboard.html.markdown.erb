@@ -1,0 +1,123 @@
+---
+title: "Tutorial: Create an interactive keyboard with HTML and CSS"
+date: 2015-06-01 20:15 PDT
+tags: design, development
+---
+
+<div class="work-image-nav"></div>
+<img src="/images/michelle-landing.gif" alt="keyboard tutorial" class="post-image image-outline" />
+
+For the landing page of this website, I thought it would be fun to create some of my illustrations in erb and SCSS so they could be more fun and interactive. Today, I wanted to share a brief tutorial about how to create a CSS keyboard with keys that get "pressed" when the user hovers on them. I did this first in HTML and CSS, and then with erb and SCSS.
+
+<section class="keyboard-container">
+  <h5>Try it out - mouse over the keys:</h5>
+  <p>(Doesn't work on mobile devices)</p>
+  <ul class="keyboard">
+    <% 14.times do %>
+      <li class="keyboard-key"></li>
+    <% end %>
+  </ul>
+</section>
+
+I recreated the effect above - note that the code in this post is slightly different than the landing page, since the basic layout of the blog is different than the rest of the site.
+
+<br />
+
+<h5>HTML and CSS</h5>
+
+Since the basic concept is a repeating row of "keys", the markup is a fairly simple unordered list.
+
+    <ul class="keyboard">
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+      <li class="keyboard-key"></li>
+    </ul>
+
+Now for the styles. On this site, I use SCSS, so I generally include variables and nesting. I'll take those out so it just appears as straight CSS:
+
+    .keyboard {
+      background-color: #ececec;
+      border-radius: 6px 6px 0 0;
+      cursor: default;
+      display: block;
+      height: 44px;
+      margin: 0 auto;
+      padding-top: 18px;
+      width: 720px;
+    }
+
+    .keyboard-key {
+      background-color: #ffffff;
+      border-radius: 3px 3px 0 0;
+      display: inline-block;
+      height: 26px;
+      margin: 0 1.5px;
+      width: 42px;
+    }
+
+    .keyboard-key:hover {
+      box-shadow: inset 0px 3px 0px -1px rgba(0, 0, 0, 0.11);
+    }
+
+You can see that it's important to make the keys `display: inline-block;` so they line up next to each other. If you're seeing bullet points or other styles on these list items, you can also include `list-style-type: none;`
+
+A box shadow on hover is needed to make the key appear "pressed". I wanted to make sure the shadow appeared on the inside of the box, so I used `inset` and made sure the shadow only showed up along the top of the box. This ended up as `box-shadow: inset 0px 3px 0px -1px rgba(0, 0, 0, 0.11);`
+
+<h5>erb and SCSS</h5>
+
+Now, I apply the same concepts as above, but update for erb and SCSS. These languages are more powerful; I can create more flexible and consistent styles, as well as clean up the markup with loops.
+
+Starting with my HTML, I can use an erb loop to clean it up.
+
+    <ul class="keyboard">
+      <%% 14.times do %>
+        <li class="keyboard-key"></li>
+      <%% end %>
+    </ul>
+
+For my styles, I wanted to use some of the features of SCSS, including nesting classes and utilizing variables. I had already created many variables for other site components, so it was easy to drop them in.
+
+    .keyboard {
+      background-color: $light-gray;
+      border-radius: $base-border-radius*2 $base-border-radius*2  0 0;
+      cursor: default;
+      display: block;
+      height: 44px;
+      margin: 0 auto;
+      padding-top: 18px;
+      width: 720px;
+
+      &-key {
+        background-color: $white;
+        border-radius: $base-border-radius $base-border-radius 0 0;
+        display: inline-block;
+        height: 26px;
+        margin: 0 1.5px;
+        width: 42px;
+
+        &:hover {
+          box-shadow: inset 0px 3px 0px -1px rgba(0, 0, 0, 0.11);
+        }
+      }
+    }
+
+To make these variables work, in a separate variables.scss file I included:
+
+    $base-border-radius: 3px;
+    $light-gray: #ececec;
+    $white: $fff;
+
+Tip: Use percentages to make the width of both the background and keys more flexible.
+
+That's it! <a href="http://twitter.com/mvenetucci" target="_blank">Tweet at me</a> if you find other examples of fun, interactive CSS illustrations.
