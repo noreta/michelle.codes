@@ -25,3 +25,6 @@ gem 'nokogiri', '~> 1.6.6.2'
 
 # CSS Vendor Prefixes
 gem 'middleman-autoprefixer', '~> 2.4.3'
+
+# Password protected pages
+gem 'middleman-gibberish', '~> 0.7.0'

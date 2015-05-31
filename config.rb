@@ -72,6 +72,17 @@ page "/blog/feed.xml", layout: false
 # css vendor prefixes
 activate :autoprefixer
 
+# Password protected pages
+activate :gibberish do |gibberish|
+
+  #set the default password
+  gibberish.password = 'changeme'
+
+  #encrypt password
+  gibberish.encrypt 'flightcar/index.html'
+
+end
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
