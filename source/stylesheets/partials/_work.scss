@@ -94,6 +94,16 @@
         width: 28%;
       }
     }
+
+    &-inline {
+      margin: 0 auto;
+      width: 100%;
+
+      @include media($medium-screen-up) {
+        width: 48%;
+        display:inline-block;
+      }
+    }
   }
 
   &-title {
