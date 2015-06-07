@@ -157,14 +157,15 @@
       }
     }
 
-
     &-cta {
-      @include button-filled;
-      text-align: center;
-      display: inline-block;
+      display: none;
+
+      @include media($medium-screen-up) {
+        @include button-filled;
+        text-align: center;
+        display: inline-block;
+      }
     }
-  
-  
   }
 }
 
