@@ -79,7 +79,7 @@ activate :gibberish do |gibberish|
   gibberish.password = 'changeme'
 
   #encrypt password
-  gibberish.encrypt '/work/secret/zenefits'
+  gibberish.encrypt '/work/secret/zenefits/index.html.erb'
 
 end
 
