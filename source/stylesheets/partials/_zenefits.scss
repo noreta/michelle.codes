@@ -1,0 +1,274 @@
+$zenefits-blue: #BADFE0;
+$zenefits-light-blue: #D1ECEC;
+$zenefits-background: #F7FAFA;
+
+.wrap {
+  max-width: 1100px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zenefits-header {
+  $dark-gray: #6d6e70;
+  $light-gray: #DDD !default;
+  $base-font-color: $dark-gray !important;
+
+  color: $base-font-color;
+  margin-bottom: 4em;
+  text-align: center;
+
+  &-text {
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  &-logo img {
+    width: 160px;
+  }
+
+  &-logo-text img {
+    width: 100px;
+  }
+
+  &-logo-mark img {
+    width: 41px;
+
+    &:hover {
+      transform: rotate(7deg);
+    }
+  }
+
+  &-cta {
+    background: linear-gradient(to bottom, rgba(250,173,71,1) 0%,rgba(243,142,45,1) 100%);
+    border-radius: 4px;
+    border: 1px solid #ed8622;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.875em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.5em 0.5em 0.357142em;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #ed8522;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: auto;
+
+    &:hover {
+      background: linear-gradient(to bottom, rgba(249,188,107,1) 0%,rgba(242,127,19,1) 100%);
+    }
+  }
+}
+
+
+.tables {
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-line-height: 1.5em !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $base-link-color: $action-color !default;
+  $dark-gray: #6d6e70;
+  $light-gray: #DDD !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !important;
+  $table-border-color: $base-border-color;
+  $table-border: 1px solid $table-border-color;
+  $table-background: lighten($table-border-color, 12%);
+  $table-header-background: lighten($table-background, 10%);
+  $table-hover-background: darken($table-background, 5%);
+  $table-stripe-background: darken($table-background, 2%);
+  $table-stripe-background-hover: darken($table-stripe-background, 5%);
+  $table-padding: 2em 1em 2.6em;
+
+  border-collapse: separate;
+  border-left: 0px;
+  border-radius: $base-border-radius;
+  border-spacing: 0;
+  border: $table-border;
+  margin-bottom: 60px;
+  width: 100%;
+
+  tbody {
+    background-color: $table-background;
+
+    tr:hover > td, tr:hover > th {
+    }
+    tr:nth-child(even) {
+      &:hover > td {
+      }
+    }
+  }
+
+  thead:first-of-type {
+    tr:first-child > th:first-child {
+      border-top-left-radius: $base-border-radius;
+    }
+
+    tr:first-child > th:last-child {
+      border-top-right-radius: $base-border-radius;
+    }
+  }
+
+  tbody:last-child {
+    tr:last-child > td:first-child {
+      border-bottom-left-radius: $base-border-radius;
+    }
+
+    tr:last-child > td:last-child {
+      border-bottom-right-radius: $base-border-radius;
+    }
+  }
+
+  thead {
+    th {
+      border-bottom: 0px;
+      border-left: 1px solid #E2E1E1;
+      color: $base-font-color;
+      font-size: 0.85em;
+      padding: 1em;
+      text-align: left;
+
+      &:first-child {
+        border-left: none;
+      }
+
+    }
+
+    th:nth-child(odd) {
+      background: $zenefits-light-blue;
+    }
+
+    th:nth-child(even) {
+      background: $zenefits-blue;
+    }
+  }
+
+
+  tbody {
+    background-color: $table-background;
+
+    td:nth-child(even) {
+      background: $zenefits-background;
+    }
+
+    td {
+      border-bottom: 0px;
+      border-left: 1px solid $table-border-color;
+      border-top: 1px solid $light-gray;
+      color: $base-font-color;
+      min-height: 134px;
+      padding: $table-padding;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      & p {
+        font-size: 0.8em;
+        margin: 0;
+        line-height: 2;
+      }
+
+      button {
+        display: inline-block;
+        font-size: 0.7em;
+        line-height: $base-line-height;
+        margin-bottom: 0.3em;
+        margin-right: 0.5em;
+        outline: none;
+        padding: 0.3em 1em;
+        width: 100%;
+
+        @include media($medium-screen) {
+          margin-bottom: 0;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.tables-label {
+  margin-bottom: -15px;
+  width: 20%;
+
+  &-header {
+    background: white !important;
+    font-size: 1.1em !important;
+    font-weight: 400;
+  }
+
+  &-header--medical::before {
+    background: image-url("zenefits/medical-icon.png");
+    background-repeat: no-repeat;
+    background-size: 21px;
+    content: "";
+    display: inline-block;
+    height: 30px;
+    margin-bottom: -10px;
+    width: 40px;
+  }
+
+  &-header--dental::before {
+    background: image-url("zenefits/dental-icon.png");
+    background-repeat: no-repeat;
+    background-size: 21px;
+    content: "";
+    display: inline-block;
+    height: 30px;
+    margin-bottom: -10px;
+    width: 40px;
+  }
+}
+
+.anthem-logo {
+  background-repeat: no-repeat;
+  background-size: 155px;
+  display: block;
+  height: 105px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.metlife-logo {
+  background-repeat: no-repeat;
+  background-size: 155px;
+  display: block;
+  height: 105px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table-bold-text {
+  font-weight: 700;
+}
+
+.table-small-text {
+  font-size: 0.75em;
+}
+
+.tables-complete::before {
+  background: image-url("zenefits/checkmark.png");
+  background-repeat: no-repeat;
+  background-size: 14px;
+  content: "";
+  display: inline-block;
+  height: 11px;
+  width: 25px;
+}
+
+.zenefits-ctas {
+  float: right;
+  margin-top: 10px;
+}
+
+.zenefits-link {
+  color: #67b6ba;
+
+  &:hover {
+    color: #40898c;
+  }
+}

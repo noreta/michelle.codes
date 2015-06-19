@@ -79,7 +79,7 @@ activate :gibberish do |gibberish|
   gibberish.password = 'changeme'
 
   #encrypt password
-  gibberish.encrypt 'flightcar/index.html'
+  gibberish.encrypt '/work/secret'
 
 end
 

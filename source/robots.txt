@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /work/flightcar/
+Disallow: /work/secret/zenefits/
