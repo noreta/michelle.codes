@@ -73,15 +73,15 @@ page "/blog/feed.xml", layout: false
 activate :autoprefixer
 
 # Password protected pages
-activate :gibberish do |gibberish|
+# activate :gibberish do |gibberish|
 
   #set the default password
-  gibberish.password = 'changeme'
+  # gibberish.password = 'changeme'
 
   #encrypt password
-  gibberish.encrypt '/work/secret/zenefits/index.html'
+  # gibberish.encrypt '/work/secret/zenefits/index.html'
 
-end
+# end
 
 # Reload the browser automatically whenever files change
 configure :development do
