@@ -104,6 +104,17 @@
         display:inline-block;
       }
     }
+
+    &-inline-small {
+      margin: 0 auto;
+      width: 100%;
+
+      @include media($medium-screen-up) {
+        width: 38%;
+        display:inline-block;
+        margin: 0 15px;
+      }
+    }
   }
 
   &-title {
@@ -169,3 +180,6 @@
   }
 }
 
+.work-center {
+  text-align: center;
+}

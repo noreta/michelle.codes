@@ -1,0 +1,62 @@
+.card {
+  border-radius: 4px;
+  border: 1px solid $light-gray;
+  display:inline-block;
+  height: 480px;
+  margin: 10px;
+  width: 200px;
+}
+
+.card-container {
+  text-align: center;
+}
+
+// card padding
+
+.small {
+  padding: 114px 53px;
+}
+
+.small-two {
+  padding: 114px 50px;
+}
+
+.small-three {
+  padding: 114px 54.5px;
+}
+
+.lunchbox {
+  padding: 114px 29px 114px 48px;
+}
+
+.medium {
+  padding: 85px 52.5px;
+}
+
+.seuss {
+  padding: 69px 47px;
+}
+
+.large {
+  padding: 64px 55px;
+}
+
+.crown {
+  padding: 34px 51px;
+}
+
+.hair {
+  padding: 67px 52px;
+}
+
+.hat {
+  padding: 64px 53px;
+}
+
+.santa {
+  padding: 34px 45px;
+}
+
+.antlers {
+  padding: 20px 35px;
+}
