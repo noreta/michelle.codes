@@ -29,5 +29,4 @@ gem 'middleman-autoprefixer', '~> 2.4.3'
 # Password protected pages
 gem 'middleman-gibberish', '~> 0.7.0'
 
-gem 'middleman-deploy', '~> 1.0'
-
+gem 'middleman-gh-pages'
