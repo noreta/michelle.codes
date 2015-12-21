@@ -18,7 +18,7 @@
     <author>
       <name>Michelle Venetucci Harvey</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-critical-9bd6cc80.png" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img class="post-image" src="../images/blog/sprint-critical-9bd6cc80.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ve been wanting to write a post about design processes for a while now. I wrote a full case study about a specific design sprint at thoughtbot, which you can view &lt;a href="https://robots.thoughtbot.com/ios-coaching-product-design-sprint" target="_blank"&gt;here&lt;/a&gt;, but I wanted to continue the discussion about ways to iterate on this process and how to apply design sprints to different types of challenges and projects.&lt;/p&gt;
 
@@ -70,7 +70,7 @@
 
 &lt;p&gt;&lt;strong&gt;Definitions&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-definitions-6edebeb0.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="post-image" src="../images/blog/sprint-definitions-6edebeb0.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Since this product concept is fairly broad, I wanted to create some constraints that would help focus the product and design.&lt;/p&gt;
 
@@ -106,7 +106,7 @@
 
 &lt;p&gt;&lt;strong&gt;Define the challenge statement&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-challenge-1ecf143a.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="post-image" src="../images/blog/sprint-challenge-1ecf143a.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;The challenge statement helps identify the job-to-be-done for the sprint or prototype or MVP. It can help identify what the problem is and explore whether that problem is solvable, and how. What is this product, and is it useful?&lt;/p&gt;
 
@@ -114,7 +114,7 @@
 
 &lt;p&gt;&lt;strong&gt;Sketch the critical path&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-critical-9bd6cc80.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="post-image" src="../images/blog/sprint-critical-9bd6cc80.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;The critical path is helpful to create after a challenge statement has been agreed upon. Once completed, the critical path can give a step-by-step map of the user's most critical experience, from having the problem to solving the problem, and every step in-between. This can help us decide what the MVP is.&lt;/p&gt;
 
@@ -122,7 +122,7 @@
 
 &lt;p&gt;&lt;strong&gt;Mind Mapping&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-mind-map-0d651251.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="post-image" src="../images/blog/sprint-mind-map-0d651251.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;At this point in the process, I'd often isolate parts of the critical path that need the most work and run a series of "diverging activities, such as mind mapping, crazy eights, and storyboarind. For this exercise, I decided to just use a couple of activities and brainstorm around the entire MVP concept.&lt;/p&gt;
 
@@ -130,7 +130,7 @@
 
 &lt;p&gt;&lt;strong&gt;Crazy Eights&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-crazy-eight-cbfa733a.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="post-image" src="../images/blog/sprint-crazy-eight-cbfa733a.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Crazy Eights work really well for coming up with a lot of varied ideas or iterative ideas on an interface very quickly. The time limit doesn't allow for participants to weed out any crazy ideas. It works great early on in the ideation process because it loosens up creative muscles and generates lots of ideas quickly.&lt;/p&gt;
 
@@ -202,14 +202,14 @@
 
 &lt;p&gt;I did some quick wireframing of some of the main parts of the game, including onboarding from the perspective of one user, and the initial game/question. I keep these very low-fidelity; I’ve found that if I try to put visual design into wireframes, it’s distracting for me and users who I want to show this to. Here are some screenshots:&lt;/p&gt;
 
-&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-wireframe-2-6f934ce0.png" /&gt;
-&lt;img class="post-image" src="/images/blog/sprint-wireframe-1-bbb71422.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="post-image" src="../images/blog/sprint-wireframe-2-6f934ce0.png" /&gt;
+&lt;img class="post-image" src="../images/blog/sprint-wireframe-1-bbb71422.png" /&gt;&lt;/p&gt;
 
 &lt;h4 id="finished-product"&gt;Finished Product&lt;/h4&gt;
 
 &lt;p&gt;At this point, the sprint itself is usually finished and I'd transition into prototyping. That being said, I was feeling inspired and wanted to play around with a couple of screens and visual design concepts for the final app. Here's what I came up with:&lt;/p&gt;
 
-&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-final-3b1bb061.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="post-image" src="../images/blog/sprint-final-3b1bb061.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;My general thoughts while creating the visual design for this exercise were:&lt;/p&gt;
 
@@ -248,7 +248,7 @@
       <name>Michelle Venetucci Harvey</name>
     </author>
     <content type="html">&lt;div class="work-image-nav"&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img class="post-image image-outline" src="/images/landing-keyboard-15078488.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="post-image image-outline" src="../images/landing-keyboard-15078488.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;For the landing page of this website, I thought it would be fun to create some of my illustrations in erb and SCSS so they could be more fun and interactive. Today, I wanted to share a brief tutorial about how to create a CSS keyboard with keys that get "pressed" when the user hovers on them. I did this first in HTML and CSS, and then with erb and SCSS.&lt;/p&gt;
 
@@ -393,7 +393,7 @@ $white: $fff;
     </author>
     <content type="html">&lt;div class="work-image-nav"&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img alt="san francisco" class="post-image image-outline" src="/images/middleman/middleman-82f47cdb.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="san francisco" class="post-image image-outline" src="../images/middleman/middleman-82f47cdb.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I've started putting project case studies up on the site, and I just finished writing one for the re-design of the &lt;a href="/work/middleman"&gt;Middleman website&lt;/a&gt;.&lt;/p&gt;
 
@@ -415,7 +415,7 @@ $white: $fff;
     <author>
       <name>Michelle Venetucci Harvey</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="san francisco" class="post-image" src="/images/blog/sf-illustration-35b1d364.png" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="san francisco" class="post-image" src="../images/blog/sf-illustration-35b1d364.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;I've been reading some articles about Dribbble's impact on the design community. Some call it the "Dribbblification" of design; designers who post finished illustrations and slick animations tend to get the most response on Dribbble, leading young designers to think that design is fundamentally tied to beautiful illustrations. This leaves out a large discussion about process, user-centered design, product design, and product thinking, which are all integral parts of designing products that people use.&lt;/p&gt;
 
@@ -496,7 +496,7 @@ $white: $fff;
     <author>
       <name>Michelle Venetucci Harvey</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="xcode" class="post-image image-outline" src="/images/blog/xcode-prototyping-1-2ed21eb3.gif" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="xcode" class="post-image image-outline" src="../images/blog/xcode-prototyping-1-2ed21eb3.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;There are a lot of prototyping tools out there for designers. Some of the tools
 I've used in the past include Pixate, After Effects, and Flinto, all of which provide
@@ -525,7 +525,7 @@ designers and engineers, and informs the entire design process.&lt;/p&gt;
     <author>
       <name>Michelle Venetucci Harvey</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img alt="ios" class="post-image" src="/images/blog/mm-2-7e700bcf.png" /&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img alt="ios" class="post-image" src="../images/blog/mm-2-7e700bcf.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;This year, I was fortunate enough to go through Codepath's &lt;a href="https://codepath.com/"&gt;iOS for
 Designers&lt;/a&gt; bootcamp, where I learned the ins-and-outs of
@@ -543,7 +543,7 @@ present at final demo day as one of the top three apps.&lt;/p&gt;
 &lt;p&gt;I'll be writing up a case study on our app soon, but wanted to share a couple of
 visuals of MiniMeet.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="ios" class="post-image" src="/images/blog/mm-1-ceaa8a5c.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ios" class="post-image" src="../images/blog/mm-1-ceaa8a5c.gif" /&gt;&lt;/p&gt;
 
 </content>
   </entry>

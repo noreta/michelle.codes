@@ -10,8 +10,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>10 Illustrated Dribbble Accounts To Follow</title>
 
-    <link href="/stylesheets/normalize-130ad7bd.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all-7abd5d53.css" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/all-83964f31.js" type="text/javascript"></script>
+    <link href="../stylesheets/normalize-130ad7bd.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/all-6c23ea5f.css" rel="stylesheet" type="text/css" />
+    <script src="../javascripts/all-83964f31.js" type="text/javascript"></script>
 
     <!-- Blog feed -->
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" />
@@ -21,7 +21,7 @@
   <section class="wrap-container global-nav-border">
   <ul class="nav-menu-left">
     <li>
-      <a class="nav-logo" href="/"><img src="/images/coffee-froth-large-c510f009.gif" /></a>
+      <a class="nav-logo" href="/"><img src="../images/coffee-froth-large-c510f009.gif" /></a>
     </li>
   </ul>
   <ul class="nav-menu-right">
@@ -41,7 +41,7 @@
   <body class="blog blog_favorite-dribbble-accounts">
       <h3 class="post-title">10 Illustrated Dribbble Accounts To Follow</h3>
       <h5 class="post-date">May 14, 2015</h5>
-      <p><img alt="san francisco" class="post-image" src="/images/blog/sf-illustration-35b1d364.png" /></p>
+      <p><img alt="san francisco" class="post-image" src="../images/blog/sf-illustration-35b1d364.png" /></p>
 
 <p>I've been reading some articles about Dribbble's impact on the design community. Some call it the "Dribbblification" of design; designers who post finished illustrations and slick animations tend to get the most response on Dribbble, leading young designers to think that design is fundamentally tied to beautiful illustrations. This leaves out a large discussion about process, user-centered design, product design, and product thinking, which are all integral parts of designing products that people use.</p>
 
@@ -122,47 +122,47 @@
   <!--     <ol> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/shortened-design-sprint">Design is a process: shortened design sprints</a> -->
+  <!--           <a href="shortened-design-sprint">Design is a process: shortened design sprints</a> -->
   <!--           <span>Jun  3</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/css-keyboard">Tutorial: Create an interactive keyboard with HTML and CSS</a> -->
+  <!--           <a href="css-keyboard">Tutorial: Create an interactive keyboard with HTML and CSS</a> -->
   <!--           <span>Jun  1</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/middleman-case-study">Middleman Case Study</a> -->
+  <!--           <a href="middleman-case-study">Middleman Case Study</a> -->
   <!--           <span>May 22</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/favorite-dribbble-accounts">10 Illustrated Dribbble Accounts To Follow</a> -->
+  <!--           <a href="favorite-dribbble-accounts">10 Illustrated Dribbble Accounts To Follow</a> -->
   <!--           <span>May 14</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/xcode-prototyping">Xcode as a prototyping tool for designers</a> -->
+  <!--           <a href="xcode-prototyping">Xcode as a prototyping tool for designers</a> -->
   <!--           <span>May  1</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/codepath-minimeet">Codepath's iOS Bootcamp and MiniMeet</a> -->
+  <!--           <a href="codepath-minimeet">Codepath's iOS Bootcamp and MiniMeet</a> -->
   <!--           <span>Apr 28</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/tutorial-rails-app">Tutorial: Rails App Setup With Heroku and Github</a> -->
+  <!--           <a href="tutorial-rails-app">Tutorial: Rails App Setup With Heroku and Github</a> -->
   <!--           <span>Apr 25</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/cocktail">Blood Orange and Thyme Cocktail</a> -->
+  <!--           <a href="cocktail">Blood Orange and Thyme Cocktail</a> -->
   <!--           <span>Apr  5</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/thoughtbot-coaching">Design Sprint Case Study: iOS Coaching</a> -->
+  <!--           <a href="thoughtbot-coaching">Design Sprint Case Study: iOS Coaching</a> -->
   <!--           <span>Mar  1</span> -->
   <!--         </li> -->
   <!--        -->
@@ -175,17 +175,17 @@
   <!--   <li> -->
   <!--     <ol> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/design.html">design (7)</a></li> -->
+  <!--         <li><a href="tags/design.html">design (7)</a></li> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/recipe.html">recipe (1)</a></li> -->
+  <!--         <li><a href="tags/recipe.html">recipe (1)</a></li> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/tutorial.html">tutorial (1)</a></li> -->
+  <!--         <li><a href="tags/tutorial.html">tutorial (1)</a></li> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/development.html">development (3)</a></li> -->
+  <!--         <li><a href="tags/development.html">development (3)</a></li> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/round-up.html">round-up (1)</a></li> -->
+  <!--         <li><a href="tags/round-up.html">round-up (1)</a></li> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/work.html">work (1)</a></li> -->
+  <!--         <li><a href="tags/work.html">work (1)</a></li> -->
   <!--        -->
   <!--     </ol> -->
   <!--   </li> -->

@@ -10,8 +10,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Tutorial: Create an interactive keyboard with HTML and CSS</title>
 
-    <link href="/stylesheets/normalize-130ad7bd.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all-7abd5d53.css" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/all-83964f31.js" type="text/javascript"></script>
+    <link href="../stylesheets/normalize-130ad7bd.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/all-6c23ea5f.css" rel="stylesheet" type="text/css" />
+    <script src="../javascripts/all-83964f31.js" type="text/javascript"></script>
 
     <!-- Blog feed -->
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" />
@@ -21,7 +21,7 @@
   <section class="wrap-container global-nav-border">
   <ul class="nav-menu-left">
     <li>
-      <a class="nav-logo" href="/"><img src="/images/coffee-froth-large-c510f009.gif" /></a>
+      <a class="nav-logo" href="/"><img src="../images/coffee-froth-large-c510f009.gif" /></a>
     </li>
   </ul>
   <ul class="nav-menu-right">
@@ -42,7 +42,7 @@
       <h3 class="post-title">Tutorial: Create an interactive keyboard with HTML and CSS</h3>
       <h5 class="post-date">Jun  1, 2015</h5>
       <div class="work-image-nav"></div>
-<p><img class="post-image image-outline" src="/images/landing-keyboard-15078488.gif" /></p>
+<p><img class="post-image image-outline" src="../images/landing-keyboard-15078488.gif" /></p>
 
 <p>For the landing page of this website, I thought it would be fun to create some of my illustrations in erb and SCSS so they could be more fun and interactive. Today, I wanted to share a brief tutorial about how to create a CSS keyboard with keys that get "pressed" when the user hovers on them. I did this first in HTML and CSS, and then with erb and SCSS.</p>
 
@@ -185,47 +185,47 @@ $white: $fff;
   <!--     <ol> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/shortened-design-sprint">Design is a process: shortened design sprints</a> -->
+  <!--           <a href="shortened-design-sprint">Design is a process: shortened design sprints</a> -->
   <!--           <span>Jun  3</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/css-keyboard">Tutorial: Create an interactive keyboard with HTML and CSS</a> -->
+  <!--           <a href="css-keyboard">Tutorial: Create an interactive keyboard with HTML and CSS</a> -->
   <!--           <span>Jun  1</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/middleman-case-study">Middleman Case Study</a> -->
+  <!--           <a href="middleman-case-study">Middleman Case Study</a> -->
   <!--           <span>May 22</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/favorite-dribbble-accounts">10 Illustrated Dribbble Accounts To Follow</a> -->
+  <!--           <a href="favorite-dribbble-accounts">10 Illustrated Dribbble Accounts To Follow</a> -->
   <!--           <span>May 14</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/xcode-prototyping">Xcode as a prototyping tool for designers</a> -->
+  <!--           <a href="xcode-prototyping">Xcode as a prototyping tool for designers</a> -->
   <!--           <span>May  1</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/codepath-minimeet">Codepath's iOS Bootcamp and MiniMeet</a> -->
+  <!--           <a href="codepath-minimeet">Codepath's iOS Bootcamp and MiniMeet</a> -->
   <!--           <span>Apr 28</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/tutorial-rails-app">Tutorial: Rails App Setup With Heroku and Github</a> -->
+  <!--           <a href="tutorial-rails-app">Tutorial: Rails App Setup With Heroku and Github</a> -->
   <!--           <span>Apr 25</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/cocktail">Blood Orange and Thyme Cocktail</a> -->
+  <!--           <a href="cocktail">Blood Orange and Thyme Cocktail</a> -->
   <!--           <span>Apr  5</span> -->
   <!--         </li> -->
   <!--        -->
   <!--         <li> -->
-  <!--           <a href="/blog/thoughtbot-coaching">Design Sprint Case Study: iOS Coaching</a> -->
+  <!--           <a href="thoughtbot-coaching">Design Sprint Case Study: iOS Coaching</a> -->
   <!--           <span>Mar  1</span> -->
   <!--         </li> -->
   <!--        -->
@@ -238,17 +238,17 @@ $white: $fff;
   <!--   <li> -->
   <!--     <ol> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/design.html">design (7)</a></li> -->
+  <!--         <li><a href="tags/design.html">design (7)</a></li> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/recipe.html">recipe (1)</a></li> -->
+  <!--         <li><a href="tags/recipe.html">recipe (1)</a></li> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/tutorial.html">tutorial (1)</a></li> -->
+  <!--         <li><a href="tags/tutorial.html">tutorial (1)</a></li> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/development.html">development (3)</a></li> -->
+  <!--         <li><a href="tags/development.html">development (3)</a></li> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/round-up.html">round-up (1)</a></li> -->
+  <!--         <li><a href="tags/round-up.html">round-up (1)</a></li> -->
   <!--        -->
-  <!--         <li><a href="/blog/tags/work.html">work (1)</a></li> -->
+  <!--         <li><a href="tags/work.html">work (1)</a></li> -->
   <!--        -->
   <!--     </ol> -->
   <!--   </li> -->
