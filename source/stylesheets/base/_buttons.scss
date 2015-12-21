@@ -1,0 +1,33 @@
+@mixin button {
+  border-radius: $base-border-radius;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 10px;
+}
+
+@mixin button-filled {
+  @include button;
+  background-color: $base-accent-color;
+  color: $white;
+
+  &:hover {
+    background-color: shade($base-accent-color, 10%);
+    color: $white;
+  }
+}
+
+@mixin button-outline {
+  @include button;
+    background-color: tint($base-accent-color, 30%);
+    color: $white;
+
+  &:hover {
+    background-color: tint($base-accent-color, 20%);
+    color: $white;
+  }
+}
+
+.primary-cta {
+  @include button-filled;
+}
+

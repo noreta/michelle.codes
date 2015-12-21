@@ -1,0 +1,32 @@
+.landing-nav {
+  font-size: 17px;
+  height: 4em;
+  padding: 0.5em 0;
+  position: absolute;
+  right: 40px;
+  z-index: 1;
+
+  &-items {
+  }
+
+  &-item {
+    display: block;
+    text-align: center;
+
+    @include media($medium-screen-up) {
+      display: inline-block;
+      margin-left: 20px;
+      text-align: left;
+    }
+
+    & a {
+      color: $white;
+    }
+
+    &:hover a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}
+

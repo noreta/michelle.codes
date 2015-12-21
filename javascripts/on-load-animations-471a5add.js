@@ -1,0 +1,1 @@
+$(document).ready(function(){function n(n){$(n).addClass("loaded")}$(".js-load-animations").each(function(){var o=$(this);o.prop("complete")?n(o):o.load(function(){n(this)})}),$(".js-static-load-animations").each(function(o,t){setTimeout(function(){n(t)},0)})});

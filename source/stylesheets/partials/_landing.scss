@@ -1,0 +1,481 @@
+.hero {
+  background-color: $base-background-color;
+  border-bottom: 1px solid $light-yellow;
+  overflow: hidden;
+  padding-bottom: 60px;
+  text-align: center;
+
+  ::selection {
+    background: tint($base-background-color, 41%);
+  }
+
+  @include media($medium-screen-up) {
+    height: 534px;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  &-nav {
+    float: right;
+
+    &-item {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  &-text {
+    position: relative;
+    opacity: 0;
+  }
+
+  &-title {
+    color: $white;
+    cursor: default;
+    font-size: 20px;
+    margin-top: 160px;
+
+    @include media($medium-screen-up) {
+      font-size: 38px;
+      margin-bottom: 9px;
+      margin-top: 260px;
+    }
+  }
+
+  &-subtitle {
+    color: $dark-brown;
+    cursor: default;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 3px;
+
+    & a {
+      border-bottom: 1px solid $dark-brown;
+      color: $dark-brown;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 0.98em;
+      text-shadow: /* stroke around*/
+          0 0 1px $base-background-color,
+          0 0 1px $base-background-color,
+          0 0 2px $base-background-color,
+          0 0 2px $base-background-color,
+          0 0 2px $base-background-color,
+          0 0 2px $base-background-color,
+          0 0 2px $base-background-color,
+          0 0 2px $base-background-color,
+          0 0 2px $base-background-color,
+          0 -5px 0 $base-background-color, /* clear vertically*/
+          0 -1px 0 $base-background-color,
+          0 -2px 0 $base-background-color,
+          0 -2px 0 $base-background-color,
+          0 -4px 0 $base-background-color,
+          0 -5px 0 $base-background-color,
+          0 -6px 0 $base-background-color
+          ;
+    }
+
+    @include media($medium-screen-up) {
+      font-size: 20px;
+    }
+  }
+}
+
+.hero-laptop {
+  width: 245px;
+  position: absolute;
+  margin: -300px 0 30px -170px;
+  left: 80px;
+
+  @include media($medium-screen-up) {
+  height: 392px;
+  width: 566px;
+  margin-top: -400px;
+  left: 0;
+  margin-left: 1em;
+  }
+}
+
+.hero-coffee {
+  display: none;
+
+  @include media($medium-screen-up) {
+    background-repeat: no-repeat;
+    background-size: 124px;
+    display: block;
+    height: 84px;
+    position: absolute;
+    right: -180px;
+    top: 320px;
+    width: 106px;
+
+    &:hover {
+      transform: rotate(7deg);
+    }
+  }
+}
+
+.hero-mouse {
+  display: none;
+
+  @include media($medium-screen-up) {
+    background-repeat: no-repeat;
+    background-size: 88px;
+    display: block;
+    height: 99px;
+    position: absolute;
+    right: -180px;
+    top: 416px;
+    width: 76px;
+
+    &:hover {
+      transform: rotate(7deg);
+    }
+  }
+}
+
+.hero-phone {
+  display: none;
+
+  @include media($medium-screen-up) {
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 322px;
+  width: 112px;
+  left: -130px;
+
+    &:hover {
+      transform: rotate(7deg);
+    }
+  }
+}
+
+.hero-keyboard {
+  cursor: default;
+  display: none;
+
+  @include media($medium-screen-up) {
+    background-color: $light-gray;
+    border-radius: $base-border-radius*2 $base-border-radius*2 0 0;
+    bottom: -80px;
+    display: block;
+    height: 44px;
+    left: 25%;
+    padding-top: 18px;
+    position: absolute;
+    width: 50%;
+  }
+}
+
+.hero-keyboard-key {
+  display: none;
+
+  @include media($medium-screen-up) {
+    background-color: $white;
+    border-radius: $base-border-radius;
+    display: inline-block;
+    height: 28px;
+    margin: 0 1.5px;
+    width: 5.8%;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 3px 0px -1px rgba(0, 0, 0, 0.11);
+  }
+}
+
+.hero-desktop {
+  display: none;
+
+  @include media($medium-screen-up) {
+    background-repeat: no-repeat;
+    background-size: 734px;
+    display: block;
+    height: 615px;
+    position: absolute;
+    right: -96px;
+    top: -872px;
+    width: 657px;
+  }
+}
+
+// Landing Page About Section
+
+.landing-about {
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: 0;
+  padding-bottom: 5em;
+
+  ::selection {
+    background: $base-background-color;
+  }
+
+  &-text {
+    @include span-columns(12 of 12);
+    text-align: center;
+
+    @include media($medium-screen-up) {
+      @include span-columns(8 of 12);
+      @include shift(2);
+      text-align: center;
+    }
+
+    &-details {
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+  }
+
+  &-skills li {
+    margin-bottom: 20px;
+    margin-left: 20%;
+    text-align: left;
+
+    @include media($medium-screen-up) {
+      margin-left: 0;
+    }
+  }
+
+  &-skill {
+    margin-left: 50px;
+    margin-top: -20px;
+    width: 180px;
+  }
+
+  &-skill-background {
+    background: $light-gray;
+    border-radius: 12px;
+    height: 10px;
+    margin-bottom: 50px;
+    width: 35px;
+  }
+
+  &-tools {
+    @include span-columns(12);
+    display: block;
+    font-size: $base-font-size / 1.3;
+    margin-bottom: 70px;
+  }
+}
+
+.skills-column-one, .skills-column-two, .skills-column-three {
+  @include span-columns(12 of 12);
+
+  @include media($medium-screen-up) {
+    @include span-columns(3 of 12);
+    margin-right: 70px;
+  }
+}
+
+.skills-column-one {
+  margin-left: 0;
+
+  @include media($medium-screen-up) {
+    margin-left: 40px;
+  }
+}
+
+.skills-column-three {
+  margin-right: 0;
+}
+
+.landing-about-skill-meter {
+  background: $base-background-color;
+  border-radius: 5px;
+  height: 10px;
+}
+
+// skill levels
+
+.product-design {
+  width: 80%;
+}
+
+.visual-design {
+  width: 80%;
+}
+
+.CSS3 {
+  width: 80%;
+}
+
+.haml {
+  width: 80%;
+}
+
+.swift {
+  width: 50%;
+}
+
+.git {
+  width: 60%;
+}
+
+.project-management {
+  width: 95%;
+}
+
+// Landing Page Work Section
+
+.landing-work {
+  padding-top: 5em;
+
+  &-header, &-header-subtitle {
+    display: inline-block;
+    padding-bottom: 10px;
+
+    @include media($medium-screen-up) {
+      padding-right: 7px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &-cta {
+    @include button;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @include media($medium-screen-up) {
+      float: right;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.image-animation {
+  margin-left: 15%;
+  margin-top: 3%;
+  text-align: center;
+  width: 70%;
+}
+
+/* ============================================================
+  Overlay Animation
+============================================================ */
+
+
+.effects .landing-work-featured-image {
+  @include span-columns(12 of 12);
+  height: 204px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  position: relative;
+
+  @include media($medium-screen-up) {
+    @include span-columns(4 of 12);
+  }
+}
+
+.effects .landing-work-featured-image:nth-child(3n) {
+  margin-right: 0;
+}
+
+.effects .landing-work-featured-image landing-work-featured-image {
+  display: block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  background: rgba($base-accent-color, 0.9);
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 20;
+}
+
+a.close-overlay {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  height: 45px;
+  line-height: 45px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 45px;
+  z-index: 100;
+}
+a.close-overlay.hidden {
+  display: none;
+}
+
+a.expand {
+  color: $white;
+  display: block;
+  font-weight: $font-weight-bold;
+  height: 60px;
+  line-height: 50px;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  z-index: 100;
+}
+
+a.expand-subtitle {
+  color: $white;
+  display: block;
+  font-weight: $font-weight-normal;
+  font-size: $base-font-size / 1.2;
+  height: 60px;
+  line-height: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  width: 100%;
+  z-index: 100;
+}
+
+a.expand-button {
+  border-radius: $base-border-radius;
+  border: 1px solid $white;
+  color: $white;
+  display: inline-block;
+  font-weight: $font-weight-normal;
+  line-height: 20px;
+  margin-left: 15px;
+  padding: 5px 10px;
+  position: absolute;
+  text-align: left;
+  top: 140px;
+  z-index: 100;
+
+  &:hover {
+    background-color: $white;
+    color: $base-accent-color;
+  }
+}
+
+/* ============================================================
+  EFFECT 1 - SLIDE IN BOTTOM
+============================================================ */
+
+#slide-up .overlay {
+  bottom: 0;
+  height: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#slide-up .overlay a.expand {
+  left: 15px;
+  margin: 0 auto -30px auto;
+  right: 0;
+  top: 30px;
+}
+
+#slide-up .landing-work-featured-image.hover .overlay {
+  height: 100%;
+}
+

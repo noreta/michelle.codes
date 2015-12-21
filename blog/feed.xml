@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Michelle's Thoughts</title>
+  <subtitle>Musings aobut tech, feminism, design, and life in the bay.</subtitle>
+  <id>https://www.michelle.codes/blog</id>
+  <link href="https://www.michelle.codes/blog"/>
+  <link href="https://www.michelle.codes/blog/feed.xml" rel="self"/>
+  <updated>2015-06-03T13:15:00-07:00</updated>
+  <author>
+    <name>Michelle Venetucci Harvey</name>
+  </author>
+  <entry>
+    <title>Design is a process: shortened design sprints</title>
+    <link rel="alternate" href="https://www.michelle.codes/blog/shortened-design-sprint"/>
+    <id>https://www.michelle.codes/blog/shortened-design-sprint</id>
+    <published>2015-06-03T13:15:00-07:00</published>
+    <updated>2015-11-28T18:29:41-08:00</updated>
+    <author>
+      <name>Michelle Venetucci Harvey</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-critical-9bd6cc80.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve been wanting to write a post about design processes for a while now. I wrote a full case study about a specific design sprint at thoughtbot, which you can view &lt;a href="https://robots.thoughtbot.com/ios-coaching-product-design-sprint" target="_blank"&gt;here&lt;/a&gt;, but I wanted to continue the discussion about ways to iterate on this process and how to apply design sprints to different types of challenges and projects.&lt;/p&gt;
+
+&lt;p&gt;Very often, I’m not in a position to run a full sprint for a new project, or for a new problem that comes up mid-project. I also generally don’t have the time to go through an entire sprint with side-projects and personal projects outside of work. For these, I’ve started adapting activities from a traditional design sprint into something more flexible.&lt;/p&gt;
+
+&lt;p&gt;For sprints in general, the goal is usually to define a product's MVP, as well as create a plan for protyping and user testing.&lt;/p&gt;
+
+&lt;p&gt;To walk through my process of a shortened sprint, I’ll be using a hypothetical product challenge to use as an example. In the following sections, I will lay out a timeline of activities with some explanations along the way. I used a whiteboard and paper sketches for various parts of this example sprint.&lt;/p&gt;
+
+&lt;h4 id="the-hypothetical-challenge"&gt;The (Hypothetical) Challenge&lt;/h4&gt;
+
+&lt;p&gt;Design an app for road trips with family, especially families including children of various age groups.&lt;/p&gt;
+
+&lt;h4 id="the-process"&gt;The Process&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Research&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Before I started brainstorming and setting priorities, I needed to gain a better understanding of the problem and user. I looked at a few sources to do some research in order to get a feel for the product space, the needs of users, and the current ways that the needs of users are being met (or not met).&lt;/p&gt;
+
+&lt;p&gt;Road trip apps&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Location-based information (nearby historic sites, stops, etc)&lt;/li&gt;
+  &lt;li&gt;Crowd-sourced driving help (like Waze)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Road trip games&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Who am I / 20 questions style games&lt;/li&gt;
+  &lt;li&gt;Discussion-based games&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;User Research&lt;/p&gt;
+
+&lt;p&gt;I Interviewed 3 people about their experiences with road trips, as well as read app store reviews for other apps in the road trip space.&lt;/p&gt;
+
+&lt;p&gt;Findings from user research:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;People struggle to find engaging activities for various user age groups (family with a 6 year old and a 10 year old, for instance)&lt;/li&gt;
+  &lt;li&gt;Young children are fairly adept with using smartphones (one user interviewed said daughter was using a smart phone for games around age 4)&lt;/li&gt;
+  &lt;li&gt;Children get bored, want to watch movies&lt;/li&gt;
+  &lt;li&gt;Parents don’t want the entire road trip to be the kids watching movies&lt;/li&gt;
+  &lt;li&gt;Parents want kids to engage with each other and their surroundings&lt;/li&gt;
+  &lt;li&gt;Traditional road trip games that are often enjoyed/fairly successful: 20 questions, trivia&lt;/li&gt;
+  &lt;li&gt;Kids have a short attention span&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Definitions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-definitions-6edebeb0.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since this product concept is fairly broad, I wanted to create some constraints that would help focus the product and design.&lt;/p&gt;
+
+&lt;p&gt;In this next part of the sprint, I used my research and existing constraints to define different areas of the product space.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Who is the customer?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Families on a road trip with 3+ people (driver can’t participate because he/she needs to be hands-free to drive).&lt;/li&gt;
+  &lt;li&gt;Family members like a variety of media (music, video, images) and don’t want to be bored.&lt;/li&gt;
+  &lt;li&gt;People tend to be fairly addicted to their phones and have a short attention span.&lt;/li&gt;
+  &lt;li&gt;Age ranges from child to adult.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;What is the problem this app is trying to solve?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Road trips are long/potentially boring.&lt;/li&gt;
+  &lt;li&gt;Families are made up of people with varying ages/interests&lt;/li&gt;
+  &lt;li&gt;It’s hard to find dynamic/consistent information on the locations you’re driving through (both for practical and entertainment purposes)&lt;/li&gt;
+  &lt;li&gt;Can’t do traditional family bonding activities like board games (too many pieces, people aren’t sitting in a circle, etc)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;What are the opportunities that the technology provides?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Geographic change offers opportunities to learn and explore based on location-based information&lt;/li&gt;
+  &lt;li&gt;Phones offer an opportunity for increased engagement and multi-media use (images, videos, sketching, messaging, etc)&lt;/li&gt;
+  &lt;li&gt;People are already addicted to their devices, so there’s an opportunity to use devices to increase family bonding&lt;/li&gt;
+  &lt;li&gt;APIs and GPS = interesting sources of information to pull from&lt;/li&gt;
+  &lt;li&gt;Location-based info has the potential to increase engagement (related to surroundings)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Define the challenge statement&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-challenge-1ecf143a.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The challenge statement helps identify the job-to-be-done for the sprint or prototype or MVP. It can help identify what the problem is and explore whether that problem is solvable, and how. What is this product, and is it useful?&lt;/p&gt;
+
+&lt;p&gt;My challenge statement: Families on road trips don’t have enough relevant activities to enhance their time together and keep the various age groups engaged.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sketch the critical path&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-critical-9bd6cc80.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The critical path is helpful to create after a challenge statement has been agreed upon. Once completed, the critical path can give a step-by-step map of the user's most critical experience, from having the problem to solving the problem, and every step in-between. This can help us decide what the MVP is.&lt;/p&gt;
+
+&lt;p&gt;Since the goal of this exercise is to create a new product concept, I wanted to look into the future of the product and use that to imagine the value proposition and core, most critical features that a user would use.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mind Mapping&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-mind-map-0d651251.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;At this point in the process, I'd often isolate parts of the critical path that need the most work and run a series of "diverging activities, such as mind mapping, crazy eights, and storyboarind. For this exercise, I decided to just use a couple of activities and brainstorm around the entire MVP concept.&lt;/p&gt;
+
+&lt;p&gt;Mind mapping is best used to warm up to other exercises like Crazy Eights. These are best for personal ideas, thinking and note taking. The exercise shouldn’t be shared with the group, so that the participant isn’t focusing on what to present outwardly. This inward focus is a great place to really start brainstorming and creating a divergence of ideas.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Crazy Eights&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-crazy-eight-cbfa733a.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Crazy Eights work really well for coming up with a lot of varied ideas or iterative ideas on an interface very quickly. The time limit doesn't allow for participants to weed out any crazy ideas. It works great early on in the ideation process because it loosens up creative muscles and generates lots of ideas quickly.&lt;/p&gt;
+
+&lt;p&gt;For this activity, I folded a piece of paper into 8 sections. The activity is time-boxed to 35 seconds per section, with 10 second breathers in between each one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;At this point…&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When I do these activities with a group during full sprints, we also discuss our sketches and create a sort of “heat map” by placing stickers next to the ideas we really like on each other’s sketches. The group then discusses the squares that gather the most stickers, and the discussion often helps the group understand where ideas and concepts are converging. For this design challenge, I did my own evaluation of my sketches and identified ideas that I liked the most.&lt;/p&gt;
+
+&lt;p&gt;Generally I would also do some storyboarding of one or two ideas that I drew in Crazy Eights, and then do another couple of rounds of mind mapping/crazy eights/storyboarding to delve into specific parts of the critical path. I would then facilitate or walk through some activities to help bring assumptions to the forefront, and create a final storyboard for what I’d like to prototype.&lt;/p&gt;
+
+&lt;p&gt;For the sake of this exercise, I didn’t do these activities. I decided to use what I had sketched to write out a more specific idea of the flow of the game.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assumptions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I often create an “assumptions table”, so I can keep track of my assumptions and brainstorm ways to validate these assumptions while creating the prototype and user testing the prototype. I write these down throughout the sprint as they come up in conversation. This helps scope out what to prototype and what the MVP should be.&lt;/p&gt;
+
+&lt;p&gt;For the sake of this design challenge, I just created a list of assumptions and used that as a guide while creating the initial prototype flow.&lt;/p&gt;
+
+&lt;p&gt;Assumptions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;People in different age groups can participate in games together, as long as certain types of assistance is given to younger children.&lt;/li&gt;
+  &lt;li&gt;Rewards like getting to choose a karaoke song or choose the next place to eat are enough incentive to make the game fun.&lt;/li&gt;
+  &lt;li&gt;Pulling in location-based information in the form of trivia and other interactive elements is highly engaging.&lt;/li&gt;
+  &lt;li&gt;People will want to learn more about location-based trivia in the form of videos and suggestions of road trip stops at historic sites.
+-People like mixing game types (trivia, 20 questions, pictionary), which keeps things interesting for longer periods of time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Game prototype flow&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the challenge statement as a guide, I felt it would be helpful to write out a more detailed critical path from the perspective of one of the potential users. I also sketched some storyboards to go along with these descriptions.&lt;/p&gt;
+
+&lt;p&gt;The flow:&lt;/p&gt;
+
+&lt;p&gt;Matt, 7 years old, is on a road trip with his siblings and parents. He’s often bored on long trips and doesn’t know how to play games with his older sister, who is 16, and brother, who is 14. He thinks they’re both a lot smarter than he is. He doesn’t own a smartphone, but his siblings do, and his dad is lending him his smartphone to use in the car.&lt;/p&gt;
+
+&lt;p&gt;→ Everyone is bored, so they decide to try a road trip app. They pick “Roadtrip It” because it promises to use different types of media (photos, videos, songs), and combines some of their favorite family games (20 questions, trivia, pictionary).&lt;/p&gt;
+
+&lt;p&gt;→ Matt is nervous about playing trivia games with his older siblings, but one of the first onboarding screens asks him to upload a photo of himself and asks for his age-range. The age-range question makes him feel slightly better.&lt;/p&gt;
+
+&lt;p&gt;→ After Matt fills in his information, his face pops up on a dashboard along his his siblings’ faces.&lt;/p&gt;
+
+&lt;p&gt;→ The app plays a quick video for how the game will work before launching the game.&lt;/p&gt;
+
+&lt;p&gt;→ The first question is a trivia question, and has multiple-choice images as answers. The question is read out loud, which Matt likes because he doesn’t read as fast as his siblings.&lt;/p&gt;
+
+&lt;p&gt;→ Matt rushes to tap one of the answers. The screen flashes "correct" and he leans over and sees that his face pops up on his brother's screen. He sees a point pop up beside his face on the dashboard. He's in the lead!&lt;/p&gt;
+
+&lt;p&gt;→ The next round is a pictionary challenge: Matt sees the word “eagle” pop up on his phone screen, along with a photo. There's also space to draw an image. He draws a bird with his finger, and it shows up on his siblings' phones.&lt;/p&gt;
+
+&lt;p&gt;→ Matt’s brother is the first to type in a guess for what the image is. He guesses “fish”, which appears on Matt's screen. The word “incorrect” pops up on the screen.&lt;/p&gt;
+
+&lt;p&gt;→ Matt’s sister types “eagle” into her phone, which pops up on Matt's screen. The word “correct” appears on the screen.&lt;/p&gt;
+
+&lt;p&gt;→ After playing for a while, Matt is still in the lead. The game pauses and prompts him with a reward: “You’re in the lead! Would you like to pick a karaoke song?”&lt;/p&gt;
+
+&lt;p&gt;→ Matt picks “Hakuna Matata” from the Lion King.&lt;/p&gt;
+
+&lt;p&gt;→ As the song starts playing, the scene from the movie plays on each user's screen, along with words to sing along.&lt;/p&gt;
+
+&lt;p&gt;→ The game continues, continuing to switch between different types of questions and activities. Points are counted up and rewards include choosing the next restaurant to eat at, picking a station to listen to, or choosing a karaoke song.&lt;/p&gt;
+
+&lt;p&gt;→ Some trivia questions are location-specific, based on where the family is currently driving. The player who gets the answer right can choose to “learn more” about these location-based questions: this includes listening to NPR stories, watching short documentaries, or stopping at historic sites along the way.&lt;/p&gt;
+
+&lt;p&gt;→ After playing the game for hours, players have learned about the locations they’ve driven through (via trivia, visiting a historic site, and watching a short video about a famous event that took place locally), played pictionary and trivia, and sang a series of karaoke songs. They’re happy, and have become closer as a family. The kids are so tired from all the fun that they end up sleeping the last leg of the trip.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wireframing the flow&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I did some quick wireframing of some of the main parts of the game, including onboarding from the perspective of one user, and the initial game/question. I keep these very low-fidelity; I’ve found that if I try to put visual design into wireframes, it’s distracting for me and users who I want to show this to. Here are some screenshots:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-wireframe-2-6f934ce0.png" /&gt;
+&lt;img class="post-image" src="/images/blog/sprint-wireframe-1-bbb71422.png" /&gt;&lt;/p&gt;
+
+&lt;h4 id="finished-product"&gt;Finished Product&lt;/h4&gt;
+
+&lt;p&gt;At this point, the sprint itself is usually finished and I'd transition into prototyping. That being said, I was feeling inspired and wanted to play around with a couple of screens and visual design concepts for the final app. Here's what I came up with:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class="post-image" src="/images/blog/sprint-final-3b1bb061.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;My general thoughts while creating the visual design for this exercise were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I wanted to use illustrations and images wherever possible to create a more visually enriched experience and also appeal to younger users.&lt;/li&gt;
+  &lt;li&gt;I used Avenir Next, which is a modern, sans-serif font I’ve used before in iOS design. I find it to be very pleasing aesthetically and easy to read.&lt;/li&gt;
+  &lt;li&gt;I wanted to keep the design very clean and clutter-free, so users know exactly where to tap and what's happening.&lt;/li&gt;
+  &lt;li&gt;I created these designs in Sketch, and made sure to mirror to my own phone so I could see how the design would look in the context of an actual device.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="in-summary"&gt;In Summary&lt;/h4&gt;
+
+&lt;p&gt;To summarize, here are the main activities I used to conduct a shortened sprint for this hypothetical challenge:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;User research (online and talking to a few people)&lt;/li&gt;
+  &lt;li&gt;Defining the user and problem&lt;/li&gt;
+  &lt;li&gt;Create a challenge statement&lt;/li&gt;
+  &lt;li&gt;Sketch the critical path&lt;/li&gt;
+  &lt;li&gt;Brainstorm using Mind Mapping&lt;/li&gt;
+  &lt;li&gt;Generate ideas using Crazy Eights&lt;/li&gt;
+  &lt;li&gt;Create a list of assumptions&lt;/li&gt;
+  &lt;li&gt;Storyboard/user flow&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can read more about design sprints from &lt;a href="http://www.gv.com/sprint/" target="_blank"&gt;Google Ventures&lt;/a&gt; and thoughtbot's &lt;a href="https://github.com/thoughtbot/design-sprint" target="_blank"&gt;design sprint repo&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Tutorial: Create an interactive keyboard with HTML and CSS</title>
+    <link rel="alternate" href="https://www.michelle.codes/blog/css-keyboard"/>
+    <id>https://www.michelle.codes/blog/css-keyboard</id>
+    <published>2015-06-01T20:15:00-07:00</published>
+    <updated>2015-11-28T18:29:41-08:00</updated>
+    <author>
+      <name>Michelle Venetucci Harvey</name>
+    </author>
+    <content type="html">&lt;div class="work-image-nav"&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img class="post-image image-outline" src="/images/landing-keyboard-15078488.gif" /&gt;&lt;/p&gt;
+
+&lt;p&gt;For the landing page of this website, I thought it would be fun to create some of my illustrations in erb and SCSS so they could be more fun and interactive. Today, I wanted to share a brief tutorial about how to create a CSS keyboard with keys that get "pressed" when the user hovers on them. I did this first in HTML and CSS, and then with erb and SCSS.&lt;/p&gt;
+
+&lt;section class="keyboard-container"&gt;
+  &lt;h5&gt;Try it out - mouse over the keys:&lt;/h5&gt;
+  &lt;p&gt;(Doesn't work on mobile devices)&lt;/p&gt;
+  &lt;ul class="keyboard"&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+      &lt;li class="keyboard-key"&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;
+
+&lt;p&gt;I recreated the effect above - note that the code in this post is slightly different than the landing page, since the basic layout of the blog is different than the rest of the site.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h5&gt;HTML and CSS&lt;/h5&gt;
+
+&lt;p&gt;Since the basic concept is a repeating row of "keys", the markup is a fairly simple unordered list.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul class="keyboard"&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now for the styles. On this site, I use SCSS, so I generally include variables and nesting. I'll take those out so it just appears as straight CSS:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.keyboard {
+  background-color: #ececec;
+  border-radius: 6px 6px 0 0;
+  cursor: default;
+  display: block;
+  height: 44px;
+  margin: 0 auto;
+  padding-top: 18px;
+  width: 720px;
+}
+
+.keyboard-key {
+  background-color: #ffffff;
+  border-radius: 3px 3px 0 0;
+  display: inline-block;
+  height: 26px;
+  margin: 0 1.5px;
+  width: 42px;
+}
+
+.keyboard-key:hover {
+  box-shadow: inset 0px 3px 0px -1px rgba(0, 0, 0, 0.11);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can see that it's important to make the keys &lt;code&gt;display: inline-block;&lt;/code&gt; so they line up next to each other. If you're seeing bullet points or other styles on these list items, you can also include &lt;code&gt;list-style-type: none;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;A box shadow on hover is needed to make the key appear "pressed". I wanted to make sure the shadow appeared on the inside of the box, so I used &lt;code&gt;inset&lt;/code&gt; and made sure the shadow only showed up along the top of the box. This ended up as &lt;code&gt;box-shadow: inset 0px 3px 0px -1px rgba(0, 0, 0, 0.11);&lt;/code&gt;&lt;/p&gt;
+
+&lt;h5&gt;erb and SCSS&lt;/h5&gt;
+
+&lt;p&gt;Now, I apply the same concepts as above, but update for erb and SCSS. These languages are more powerful; I can create more flexible and consistent styles, as well as clean up the markup with loops.&lt;/p&gt;
+
+&lt;p&gt;Starting with my HTML, I can use an erb loop to clean it up.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul class="keyboard"&amp;gt;
+  &amp;lt;% 14.times do %&amp;gt;
+    &amp;lt;li class="keyboard-key"&amp;gt;&amp;lt;/li&amp;gt;
+  &amp;lt;% end %&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For my styles, I wanted to use some of the features of SCSS, including nesting classes and utilizing variables. I had already created many variables for other site components, so it was easy to drop them in.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.keyboard {
+  background-color: $light-gray;
+  border-radius: $base-border-radius*2 $base-border-radius*2  0 0;
+  cursor: default;
+  display: block;
+  height: 44px;
+  margin: 0 auto;
+  padding-top: 18px;
+  width: 720px;
+
+  &amp;amp;-key {
+    background-color: $white;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1.5px;
+    width: 42px;
+
+    &amp;amp;:hover {
+      box-shadow: inset 0px 3px 0px -1px rgba(0, 0, 0, 0.11);
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To make these variables work, in a separate variables.scss file I included:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$base-border-radius: 3px;
+$light-gray: #ececec;
+$white: $fff;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Tip: Use percentages to make the width of both the background and keys more flexible.&lt;/p&gt;
+
+&lt;p&gt;That's it! &lt;a href="http://twitter.com/mvenetucci" target="_blank"&gt;Tweet at me&lt;/a&gt; if you find other examples of fun, interactive CSS illustrations.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Middleman Case Study</title>
+    <link rel="alternate" href="https://www.michelle.codes/blog/middleman-case-study"/>
+    <id>https://www.michelle.codes/blog/middleman-case-study</id>
+    <published>2015-05-22T20:15:00-07:00</published>
+    <updated>2015-11-28T18:29:41-08:00</updated>
+    <author>
+      <name>Michelle Venetucci Harvey</name>
+    </author>
+    <content type="html">&lt;div class="work-image-nav"&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img alt="san francisco" class="post-image image-outline" src="/images/middleman/middleman-82f47cdb.gif" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I've started putting project case studies up on the site, and I just finished writing one for the re-design of the &lt;a href="/work/middleman"&gt;Middleman website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Middleman is a static site generator using all the shortcuts and tools in modern web development. It's built on Ruby, and can be used to get static sites up and running quickly and painlessly.&lt;/p&gt;
+
+&lt;p&gt;Like any good web framework, Middleman has a documentation site that aims to help people understand the tool, use the tool easily, troubleshoot problems, and contribute changes to open-source features. The existing documentation site needed a brand-overhaul, as well as some attention to the overall organization of documentation, messaging, and user experience.&lt;/p&gt;
+
+&lt;p&gt;In the case study, I focus on the problem and the process for solving it. I talk about user research and card sorting, illustrations and UX, and implementation.&lt;/p&gt;
+
+&lt;h4 id="a-hrefworkmiddleman-targetblankvisit-the-case-study-nowa"&gt;&lt;a href="/work/middleman" target="_blank"&gt;Visit the case study now&lt;/a&gt;&lt;/h4&gt;
+</content>
+  </entry>
+  <entry>
+    <title>10 Illustrated Dribbble Accounts To Follow</title>
+    <link rel="alternate" href="https://www.michelle.codes/blog/favorite-dribbble-accounts"/>
+    <id>https://www.michelle.codes/blog/favorite-dribbble-accounts</id>
+    <published>2015-05-14T20:15:00-07:00</published>
+    <updated>2015-11-28T18:29:41-08:00</updated>
+    <author>
+      <name>Michelle Venetucci Harvey</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="san francisco" class="post-image" src="/images/blog/sf-illustration-35b1d364.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I've been reading some articles about Dribbble's impact on the design community. Some call it the "Dribbblification" of design; designers who post finished illustrations and slick animations tend to get the most response on Dribbble, leading young designers to think that design is fundamentally tied to beautiful illustrations. This leaves out a large discussion about process, user-centered design, product design, and product thinking, which are all integral parts of designing products that people use.&lt;/p&gt;
+
+&lt;p&gt;That being said, Dribbble is a fantastic repository of inspiration, especially when it comes to illustrations. I'm constantly inspired by the amazing work of designers on Dribbble, all of whom deserve recognition. I've put together a round-up of some of the accounts I've been following recently.&lt;/p&gt;
+
+&lt;h4 id="dribbble-accounts-with-great-illustrations"&gt;10 Dribbble Accounts with Great Illustrations&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://dribbble.com/sweetness-every-day"&gt;Marko Stupic&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Marko has a really impressive Icon-a-Day project, whereby he… posts one icon every day. His work is always breathtaking. Also make sure to check out &lt;a href="http://icon-a-day.com/"&gt;his website&lt;/a&gt;!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://dribbble.com/dropbox"&gt;Dropbox&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The design team at Dropbox is constantly posting all kinds of fantstic illustrations and animations. It's hard to know which Dropbox designers to mention individually, but I've been following Dan Eden, Ed Chao, Ryan Putnam, Zach Graham, Alice Lee, Brandon Land, Tymn Armstrong, Jeremiah Shaw, Claire Pedersen, Josh Puckett, and Linda Eliasen for some time.&lt;/p&gt;
+
+&lt;p&gt;Clearly, I'm having a hard time narrowing down that list.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://dribbble.com/FiveNYC"&gt;Five Agency&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Five Agency has been posting some great animated illustrations, many taken from Marko Supic's Icon-a-Day project.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://dribbble.com/focuslab"&gt;Focus Lab&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I'm constantly inspired by Focus Lab's work, and their illustration and animation work is fantastic.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://dribbble.com/kyleanthonymiller"&gt;Kyle Anthony Miller&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The work coming from Teespring's recent design hire Kyle Anthony Miller is incredible. He has a great touch with color and illustration, and is creating a really cohesive brand for the company.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://dribbble.com/slaterdesign"&gt;Nick Slater&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Nick posts beautiful illustrations, but his landscapes are especially stunning.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://dribbble.com/treehouse"&gt;Treehouse&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Treehouse is another especially impressive company account (and &lt;a href="https://teamtreehouse.com/"&gt;their website&lt;/a&gt; design really features the work!). Some of their individual designers who post a lot of illustration work include Mat Helme, Matt Spiel, and Chris Michel.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://dribbble.com/motionauthors"&gt;Motion Authors&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Motion authors specialize in animations, so it's no surprise that they have some of the most clever and well-done animations out there.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://dribbble.com/house"&gt;Allison House&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Allison, apart from having built-in branding with that last name and the coolest &lt;a href="http://allison.house/blog/404/"&gt;404 page&lt;/a&gt; I've ever seen, does really interesting work with animating in 3D.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://dribbble.com/megdraws"&gt;Meg Robichaud&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Meg has consistently interesting illustrations, and &lt;a href="http://meg-draws.com/"&gt;her website&lt;/a&gt; shows off her talents even more than her Dribbble account.&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Xcode as a prototyping tool for designers</title>
+    <link rel="alternate" href="https://www.michelle.codes/blog/xcode-prototyping"/>
+    <id>https://www.michelle.codes/blog/xcode-prototyping</id>
+    <published>2015-05-01T20:15:00-07:00</published>
+    <updated>2015-11-28T18:29:41-08:00</updated>
+    <author>
+      <name>Michelle Venetucci Harvey</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="xcode" class="post-image image-outline" src="/images/blog/xcode-prototyping-1-2ed21eb3.gif" /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a lot of prototyping tools out there for designers. Some of the tools
+I've used in the past include Pixate, After Effects, and Flinto, all of which provide
+different ways for designers to show interaction and test their designs.&lt;/p&gt;
+
+&lt;p&gt;However, after completing Codepath’s &lt;a href="https://codepath.com/iosfordesigners"&gt;iOS for Designers bootcamp&lt;/a&gt;, I've started using Xcode as a prototyping tool for many projects. There are a few reasons why I think
+it can be a great process for designers working on iOS projects to get comfortable with.&lt;/p&gt;
+
+&lt;h4 id="designers-benefit-from-understanding-app-development"&gt;1. Designers benefit from understanding app development&lt;/h4&gt;
+
+&lt;p&gt;By using the same tool that engineers use to build apps, designers can become
+more comfortable with terminology, app architecture, and general constraints
+involved in building apps. All of this facilitates communication between
+designers and engineers, and informs the entire design process.&lt;/p&gt;
+
+&lt;p&gt;Want to see more reasons why designers can benefit from using Xcode? Read more in my post on thoughtbot's blog, &lt;a href="https://robots.thoughtbot.com/xcode-as-a-prototyping-tool-for-designers"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Codepath's iOS Bootcamp and MiniMeet</title>
+    <link rel="alternate" href="https://www.michelle.codes/blog/codepath-minimeet"/>
+    <id>https://www.michelle.codes/blog/codepath-minimeet</id>
+    <published>2015-04-28T20:15:00-07:00</published>
+    <updated>2015-11-28T18:29:41-08:00</updated>
+    <author>
+      <name>Michelle Venetucci Harvey</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="ios" class="post-image" src="/images/blog/mm-2-7e700bcf.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This year, I was fortunate enough to go through Codepath's &lt;a href="https://codepath.com/"&gt;iOS for
+Designers&lt;/a&gt; bootcamp, where I learned the ins-and-outs of
+Xcode, created animations in Swift, and even learned how to hook up Parse and
+create fully-working apps. You can read more about my thoughts about using Xcode as
+a designer on the &lt;a href="https://robots.thoughtbot.com/xcode-as-a-prototyping-tool-for-designers"&gt;thoughtbot
+blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After a few weeks of regular homework assignments where we prototyped existing
+apps, we all split into small groups and built our own apps. My group created an
+app called MiniMeet, which lets people create small, intimate meet-ups about any
+topic at any time. We got to
+present at final demo day as one of the top three apps.&lt;/p&gt;
+
+&lt;p&gt;I'll be writing up a case study on our app soon, but wanted to share a couple of
+visuals of MiniMeet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="ios" class="post-image" src="/images/blog/mm-1-ceaa8a5c.gif" /&gt;&lt;/p&gt;
+
+</content>
+  </entry>
+</feed>
