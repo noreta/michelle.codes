@@ -5,10 +5,31 @@
   <id>https://www.michelle.codes/blog</id>
   <link href="https://www.michelle.codes/blog"/>
   <link href="https://www.michelle.codes/blog/feed.xml" rel="self"/>
-  <updated>2015-06-03T13:15:00-07:00</updated>
+  <updated>2015-12-28T19:15:00-08:00</updated>
   <author>
     <name>Michelle Venetucci Harvey</name>
   </author>
+  <entry>
+    <title>Friendship Matching Game</title>
+    <link rel="alternate" href="https://www.michelle.codes/blog/matching-game"/>
+    <id>https://www.michelle.codes/blog/matching-game</id>
+    <published>2015-12-28T19:15:00-08:00</published>
+    <updated>2015-12-22T21:42:26-08:00</updated>
+    <author>
+      <name>Michelle Venetucci Harvey</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="matching cards" class="post-image" src="../images/matching/matching_cards-df382ca6.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;It's not every day you run across a genuine, deep friendship. I've been lucky enough to have a best friend for the past 22 years; we grew up across the street from each other, and her family continues to feel like an addition to my own family.&lt;/p&gt;
+
+&lt;p&gt;I wanted to find a way to celebrate all our years together. My mom was always very trigger-happy with the camera, which means we have tons of amazing photos documenting many years together. I decided to pick some of my favorites to illustrate and turn into a &lt;a href="/work/matching"&gt;Friendship Matching Game&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="matching cards" class="post-image" src="../images/matching/match2-92d92a65.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I just posted a case study with full visuals for the game.
+&lt;a href="/work/matching"&gt;Visit the case study now.&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Design is a process: shortened design sprints</title>
     <link rel="alternate" href="https://www.michelle.codes/blog/shortened-design-sprint"/>
@@ -513,37 +534,6 @@ involved in building apps. All of this facilitates communication between
 designers and engineers, and informs the entire design process.&lt;/p&gt;
 
 &lt;p&gt;Want to see more reasons why designers can benefit from using Xcode? Read more in my post on thoughtbot's blog, &lt;a href="https://robots.thoughtbot.com/xcode-as-a-prototyping-tool-for-designers"&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-</content>
-  </entry>
-  <entry>
-    <title>Codepath's iOS Bootcamp and MiniMeet</title>
-    <link rel="alternate" href="https://www.michelle.codes/blog/codepath-minimeet"/>
-    <id>https://www.michelle.codes/blog/codepath-minimeet</id>
-    <published>2015-04-28T20:15:00-07:00</published>
-    <updated>2015-11-28T18:29:41-08:00</updated>
-    <author>
-      <name>Michelle Venetucci Harvey</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="ios" class="post-image" src="../images/blog/mm-2-7e700bcf.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;This year, I was fortunate enough to go through Codepath's &lt;a href="https://codepath.com/"&gt;iOS for
-Designers&lt;/a&gt; bootcamp, where I learned the ins-and-outs of
-Xcode, created animations in Swift, and even learned how to hook up Parse and
-create fully-working apps. You can read more about my thoughts about using Xcode as
-a designer on the &lt;a href="https://robots.thoughtbot.com/xcode-as-a-prototyping-tool-for-designers"&gt;thoughtbot
-blog&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;After a few weeks of regular homework assignments where we prototyped existing
-apps, we all split into small groups and built our own apps. My group created an
-app called MiniMeet, which lets people create small, intimate meet-ups about any
-topic at any time. We got to
-present at final demo day as one of the top three apps.&lt;/p&gt;
-
-&lt;p&gt;I'll be writing up a case study on our app soon, but wanted to share a couple of
-visuals of MiniMeet.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="ios" class="post-image" src="../images/blog/mm-1-ceaa8a5c.gif" /&gt;&lt;/p&gt;
 
 </content>
   </entry>
