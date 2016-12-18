@@ -1,0 +1,39 @@
+---
+title: "A bot to help you read your way through the next 4 years"
+date: 2016-11-28 20:15 PDT
+tags: Bots, design
+---
+
+__Tutorial for using Google Spreadsheets and Slack to create a reading group bot__
+
+<%= image_tag "blog/list-topics.gif", alt: "bot", class: "post-image image-outline" %>
+
+Since the election, there’s been a noticeable uptick in activism and engagement around important issues that shape our country. A lot of people in more liberal communities woke up to the fact that they’ve been living in an echo chamber and are actively looking for ways to expand these boundaries, often through discussion or reading. I want to share an open-sourced tool I built to help facilitate this kind of organizing.
+
+Last week, [Angelica Coleman] reached out to her network about wanting to regularly read and discuss history, culture, and race with other people, and quickly received a lot of interest. She set up a Slack group and we put together a Google spreadsheet for people to use as a collaborative reading list.
+
+[Angelica Coleman]:(https://medium.com/@angelicacoleman)
+
+The challenge with spreadsheets is that they aren’t always easy to keep up with. Apart from getting email updates every time someone adds something or manually opening and scanning through the spreadsheet to find changes, spreadsheets are sometimes hard to engage with over the long term. We wanted this to be a resource that would continue to involve people and serve as a living document.
+
+In order to incorporate the reading list into the space where people are already having discussions — Slack — I built a bot that helps increase visibility of the list and lets people add directly to it without ever leaving Slack. [It’s now open sourced], and this tutorial is a walk-through of how to set it up for your own Slack reading group.
+[It’s now open sourced](https://gist.github.com/venetucci/8ebc5b0f6f73354743c3307d2f38b25a)
+
+The basic structure of this project was built on top of [this tutorial] by JD Maresco on how to use Google Scripts and Slack to automate standups. We’ll be using a Javascript-based programming environment called [Google Apps Script], built into all Google Apps, which you can use to build helpful tools and improved workflows.
+[this tutorial](http://jd.mares.co/tutorials/2015/09/20/slack-google-apps-script-stand-ups.html)
+[Google Apps Script](https://developers.google.com/apps-script/)
+
+So, let’s get started.
+
+<%= image_tag "blog/listing.gif", alt: "bot-list", class: "post-image image-outline" %>
+
+__The Goal__
+Allow users to add items to a shared reading list, as well as check for list topics and see list activity via a Slack channel.
+
+__What you need__
+
+* A Google Account
+* Access to a Slack team’s integrations
+* Basic Javascript knowledge
+
+#### <a href="https://medium.com/@venetucci/a-bot-to-help-you-read-your-way-through-next-4-years-7ba9d80066fc#.61sxx16ej" target="_blank">Read the full post on Medium</a>
