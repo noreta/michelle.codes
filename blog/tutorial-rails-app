@@ -10,7 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Tutorial: Rails App Setup With Heroku and Github</title>
 
-    <link href="../stylesheets/normalize-130ad7bd.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/all-b919e339.css" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/normalize-130ad7bd.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/all-01118f8d.css" rel="stylesheet" type="text/css" />
     <script src="../javascripts/all-83964f31.js" type="text/javascript"></script>
 
     <!-- Blog feed -->
@@ -380,6 +380,16 @@ Github</a></li>
   <!--     <ol> -->
   <!--        -->
   <!--         <li> -->
+  <!--           <a href="a-bot-to-help-you-read">A bot to help you read your way through the next 4 years</a> -->
+  <!--           <span>Nov 28</span> -->
+  <!--         </li> -->
+  <!--        -->
+  <!--         <li> -->
+  <!--           <a href="love-is-love">The loveislove project</a> -->
+  <!--           <span>Nov 14</span> -->
+  <!--         </li> -->
+  <!--        -->
+  <!--         <li> -->
   <!--           <a href="matching-game">Friendship Matching Game</a> -->
   <!--           <span>Dec 28</span> -->
   <!--         </li> -->
@@ -419,16 +429,6 @@ Github</a></li>
   <!--           <span>Apr 25</span> -->
   <!--         </li> -->
   <!--        -->
-  <!--         <li> -->
-  <!--           <a href="cocktail">Blood Orange and Thyme Cocktail</a> -->
-  <!--           <span>Apr  5</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="thoughtbot-coaching">Design Sprint Case Study: iOS Coaching</a> -->
-  <!--           <span>Mar  1</span> -->
-  <!--         </li> -->
-  <!--        -->
   <!--     </ol> -->
   <!--   </li> -->
   <!-- </ul> -->
@@ -438,7 +438,7 @@ Github</a></li>
   <!--   <li> -->
   <!--     <ol> -->
   <!--        -->
-  <!--         <li><a href="tags/design.html">design (8)</a></li> -->
+  <!--         <li><a href="tags/design.html">design (10)</a></li> -->
   <!--        -->
   <!--         <li><a href="tags/recipe.html">recipe (1)</a></li> -->
   <!--        -->
@@ -451,6 +451,8 @@ Github</a></li>
   <!--         <li><a href="tags/work.html">work (1)</a></li> -->
   <!--        -->
   <!--         <li><a href="tags/side-project.html">side project (1)</a></li> -->
+  <!--        -->
+  <!--         <li><a href="tags/bots.html">Bots (1)</a></li> -->
   <!--        -->
   <!--     </ol> -->
   <!--   </li> -->
