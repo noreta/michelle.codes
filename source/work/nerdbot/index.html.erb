@@ -1,0 +1,109 @@
+---
+title: Michelle Venetucci Harvey
+---
+
+<%= partial "layouts/partials/nav" %>
+
+<section class="about wrap-container body-content-container">
+    <h3 class="work-title">
+      Nerdbot, a Custom Slackbot
+    </h3>
+    <p class="work-title-secondary">
+      UX and implementation
+    </p>
+    <div class="work-cta-container">
+      <a href="https://medium.com/@venetucci/a-bot-to-help-you-read-your-way-through-next-4-years-7ba9d80066fc" target="_blank">
+        <div class="work-cta-primary">
+          Read Medium tutorial
+        </div>
+      </a>
+      <a href="https://gist.github.com/venetucci/8ebc5b0f6f73354743c3307d2f38b25a" target="_blank">
+        <div class="work-cta-secondary">
+          View on Github
+        </div>
+      </a>
+    </div>
+    <%= image_tag "blog/list-topics.gif", class: "image-outline" %>
+    <div class="work-text">
+      <p class="work-text-block">
+        Nerdbot is a custom Slackbot that allows users to add items to a Google spreadsheet via Slack.
+      </p>
+    </div>
+    <h4 class="work-subtitle">
+      The Problem
+    </h4>
+    <div class="work-text">
+      <p class="work-text-block">
+        A group of people joined together on slack, wanting to create a collaborative reading list and use Slack as a space to discuss. We started with a Google spreadsheet.
+      </p>
+      <p class="work-text-block">
+        The challenge with spreadsheets is that they aren’t always easy to keep up with. Apart from getting email updates every time someone adds something or manually opening and scanning through the spreadsheet to find changes, spreadsheets are sometimes hard to engage with over the long term. I wanted this to be a resource that would continue to involve people and serve as a living document.
+      </p>
+    </div>
+    <h4 class="work-subtitle">
+      The Solution
+    </h4>
+    <div class="work-image-medium">
+      <%= image_tag "nerdbot/nerdbot-2.png", class: "image-outline" %>
+    </div>
+    <div class="work-text">
+      <p class="work-text-block">
+        In order to incorporate the reading list into the space where people were already having discussions — Slack — I built a bot that helps increase visibility of the list and lets people add directly to it without ever leaving Slack.
+      </p>
+      <p class="work-text-block">
+        The bot is built using Google Scripts, a Javascript-based programming environment built into all Google Apps. This is integrated into Slack using Slack webhooks.
+      </p>
+    </div>
+    <h4 class="work-subtitle">
+      User Experience
+    </h4>
+    <div class="work-image-medium">
+      <%= image_tag "blog/list-topics.gif", class: "image-outline" %>
+    </div>
+    <div class="work-text">
+      <p class="work-text-block">
+        With this bot, I wanted to make sure it felt intuitive for users to add items from Slack, and that feedback loops helped increase visibility in the group and assure the user that they had successfully posted to the spreadsheet.
+      </p>
+      <p class="work-text-block">
+        We needed a way to organize the Slack message so that it was easy for humans to write, but unambiguous for the bot to parse. I decided that using a semi-colon to separate items like title, author, description, and link was the clearest format. A semi-colon is not likely to be used in the main content, so it’s unique, but it’s not too abstract or intimidating.
+      </p>
+      <p class="work-text-block">
+        The goal was for each Slack message to be added to the correct Google sheet, with each piece of information being added to the correct column. In order for Slack to know which messages to send, I took advantage of a Slack feature called “trigger words”. The format for telling the bot what to send via the trigger word "add:"" would look like this: "add: category; title; author; description; link".
+      </p>
+      <p class="work-text-block">
+        Since users will have to input the correct topic name in order for their item to be entered correctly into the spreadsheet, it’s useful to be able to check the topics without actually having to open the spreadsheet. The bot could return a list of topics based on sheet names after a user types the trigger words "list topics".
+      </p>
+      <p class="work-text-block">
+        After a user adds an item via Slack, it would make sense for some sort of confirmation to be published in Slack to reassure the user and help everyone track what’s being added in one place.
+      </p>
+      <p class="work-text-block">
+        If you're interested in learning how this was actually built, read a <a href="https://medium.com/@venetucci/a-bot-to-help-you-read-your-way-through-next-4-years-7ba9d80066fc#.ymw34fzie" target="_blank">full tutorial on Medium</a>.
+      </p>
+      <p class="work-text-block">
+        The open source code is available <a href="https://gist.github.com/venetucci/8ebc5b0f6f73354743c3307d2f38b25a" target="_blank">on Github</a>.
+      </p>
+    </div>
+    <div class="work-image-medium">
+      <%= image_tag "nerdbot/nerdbot-3.png", class: "image-outline" %>
+    </div>
+
+    <div class="work-next">
+      <a href="/work/love">
+        <div class="work-next-left-arrow"></div>
+        <div class="work-next-left">
+          Love is Love
+        </div>
+      </a>
+      <a href="/">
+        <div class="work-next-cta">
+          Return to work
+        </div>
+      </a>
+      <a href="/work/swift">
+        <div class="work-next-right">
+          Swift Prototypes
+        </div>
+        <div class="work-next-right-arrow"></div>
+      </a>
+    </div>
+</section>

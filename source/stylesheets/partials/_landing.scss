@@ -355,24 +355,50 @@
   Overlay Animation
 ============================================================ */
 
+.landing-work-intro {
+  text-align: center;
+  margin-bottom: 4em;
+  font-size: 20px;
+}
 
-.effects .landing-work-featured-image {
+.landing-work-featured-project {
   @include span-columns(12 of 12);
-  height: 204px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   overflow: hidden;
   position: relative;
+  box-shadow: 0 0 5px $light-gray;
+  border-radius: 4px;
 
   @include media($medium-screen-up) {
-    @include span-columns(4 of 12);
+    @include span-columns(6 of 12);
   }
 }
 
-.effects .landing-work-featured-image:nth-child(3n) {
+.landing-work-featured-project:hover {
+  
+}
+
+
+.featured-work-subtitle-group {
+  padding: 16px;
+}
+
+.featured-work-subtitle {
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+.effects .landing-work-featured-image {
+  height: 316px;
+  overflow: hidden;
+  border: 1px $light-gray solid;
+}
+
+.effects .landing-work-featured-project:nth-child(2n) {
   margin-right: 0;
 }
 
-.effects .landing-work-featured-image landing-work-featured-image {
+.effects .landing-work-featured-project landing-work-featured-project {
   display: block;
   height: auto;
   margin: 0;
@@ -478,4 +504,3 @@ a.expand-button {
 #slide-up .landing-work-featured-image.hover .overlay {
   height: 100%;
 }
-

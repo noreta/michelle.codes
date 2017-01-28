@@ -1,0 +1,105 @@
+---
+title: Michelle Venetucci Harvey
+---
+
+<%= partial "layouts/partials/nav" %>
+
+<section class="about wrap-container body-content-container">
+    <h3 class="work-title">
+      Swift Prototypes
+    </h3>
+    <p class="work-title-secondary">
+      UX and implementation
+    </p>
+    <div class="work-cta-container">
+      <a href="https://github.com/emmaguo/overlay" target="_blank">
+        <div class="work-cta-primary">
+          Overlay on Github
+        </div>
+      </a>
+      <a href="https://github.com/venetucci/minimeet" target="_blank">
+        <div class="work-cta-secondary">
+          Minimeet on Github
+        </div>
+      </a>
+    </div>
+    <%= image_tag "blog/mm-2.png", class: "post-image" %>
+    <div class="work-text">
+      <p class="work-text-block">
+        I completed the <a href="https://codepath.com/iosfordesigners" target="_blank">Codepath iOS for Designers</a> bootcamp in 2015 and again in 2016. The bootcamp was created to teach designers how to build fully interactive iOS prototypes in Xcode using Swift. After re-creating a number of existing apps, we worked in teams to create our own app. During both sessions, I worked in a team of three to build the final project.
+      </p>
+      <p class="work-text-block">
+        All gifs on this page are screencasts of the Xcode simulator, built in Swift.
+      </p>
+    </div>
+    <h4 class="work-subtitle">
+      Codepath 2016 project: Overlay
+    </h4>
+    <div class="work-text">
+      <p class="work-text-block">
+        Overlay is an app that leads people through tutorials of design fundamentals. The target audience was non-designers like engineers and project managers, who benefit from having a basic understanding of design principles.
+      </p>
+      <p class="work-text-block">
+        We created a fun loading effect using Swift animations:
+      </p>
+      <div class="work-image-small">
+        <%= image_tag "swift/swift-1.gif", class: "image-outline" %>
+      </div>
+      <p class="work-text-block">
+        And tutorial cards for each topic section:
+      </p>
+      <div class="work-image-small">
+        <%= image_tag "swift/swift-2.gif", class: "image-outline" %>
+      </div>
+      <p class="work-text-block">
+        Each section had interactive tutorials, with a number of different gestures and animations used. We set up basic logic to trigger correct or incorrect buttons, allowing the user to progress only when they got the answer right. This progress was stored in a custom data model we created:
+      </p>
+      <div class="work-image-small">
+        <%= image_tag "swift/swift-3.gif", class: "image-outline" %>
+      </div>
+      <div class="work-image-small">
+        <%= image_tag "swift/swift-4.gif", class: "image-outline" %>
+      </div>
+      <div class="work-image-small">
+        <%= image_tag "swift/swift-5.gif", class: "image-outline" %>
+      </div>
+
+    </div>
+    <h4 class="work-subtitle">
+      Codepath 2015 Project: Minimeet
+    </h4>
+    <div class="work-image-medium">
+      <%= image_tag "blog/mm-2.png", class: "" %>
+    </div>
+    <div class="work-text">
+      <p class="work-text-block">
+        Minimeet is an easy was to create small-group, coversation-based meetups about any topic you want. Users can create a meetup via the app, select a location using a Foursquare integration, and publish it to the app's main feed. It is added to a running feed of events and stored with Parse, and up to five people can RSVP.
+      </p>
+      <p class="work-text-block">
+        Since Xcode has gone through a number of updates since 2015 and the app hasn't been maintained, I only have a couple of screens of our onboarding and main feed:
+      </p>
+      <div class="work-image-medium">
+        <%= image_tag "blog/mm-1.gif", class: "" %>
+      </div>
+    </div>
+
+    <div class="work-next">
+      <a href="/work/nerdbot">
+        <div class="work-next-left-arrow"></div>
+        <div class="work-next-left">
+          Nerdbot
+        </div>
+      </a>
+      <a href="/">
+        <div class="work-next-cta">
+          Return to work
+        </div>
+      </a>
+      <a href="/work/giveback">
+        <div class="work-next-right">
+          Project Give Back
+        </div>
+        <div class="work-next-right-arrow"></div>
+      </a>
+    </div>
+</section>
