@@ -10,7 +10,7 @@
   }
 
   @include media($medium-screen-up) {
-    height: 534px;
+    height: 100vh;
     padding-bottom: 0;
     position: relative;
   }
@@ -359,15 +359,21 @@
   text-align: center;
   margin-bottom: 4em;
   font-size: 20px;
+  height: 100vh;
 }
 
 .landing-work-featured-project {
   @include span-columns(12 of 12);
+  color: $black;
   margin-bottom: 26px;
   overflow: hidden;
   position: relative;
   box-shadow: 0 0 5px $light-gray;
   border-radius: 4px;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
 
   @include media($medium-screen-up) {
     @include span-columns(6 of 12);
@@ -375,9 +381,14 @@
 }
 
 .landing-work-featured-project:hover {
-  
+  box-shadow: 0 0 10px $light-gray;
+  color: $black;
+  cursor: pointer;
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -o-transform: scale(1.01);
 }
-
 
 .featured-work-subtitle-group {
   padding: 16px;
@@ -386,6 +397,11 @@
 .featured-work-subtitle {
   margin-bottom: 0;
   font-weight: 900;
+  color: $black;
+}
+
+.landing-work-featured-project:a {
+  color: $black;
 }
 
 .effects .landing-work-featured-image {

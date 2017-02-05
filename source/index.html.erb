@@ -1,153 +1,26 @@
 ---
 title: Michelle Venetucci Harvey
 ---
+<%= partial "layouts/partials/landing-nav" %>
 
-<%= partial "layouts/partials/nav" %>
-
-<section class="body-content-container">
-<section class="work-container wrap-container">
-  <div class="landing-work-intro">
-    I'm Michelle, a Product Designer in San Francisco
+<header class="hero">
+  <%= image_tag "hero-laptop.png", class: "js-load-animations hero-laptop" %>
+  <%= image_tag "hero-desktop.png", class: "js-load-animations hero-desktop" %>
+  <%= image_tag "coffee-froth.gif", class: "js-load-animations hero-coffee" %>
+  <%= image_tag "hero-phone.png", class: "js-load-animations hero-phone" %>
+  <%= image_tag "mouse.png", class: "js-load-animations hero-mouse" %>
+  <div class="hero-text js-static-load-animations">
+    <h1 class="hero-title">
+      Michelle Venetucci Harvey
+    </h1>
+    <h3 class="hero-subtitle">
+      Pixel pusher and indoor enthusiast, currently a Product Designer at <a href="https://www.lyft.com/" target="_blank">Lyft</a>.
+    </h3>
   </div>
-</section>
-
-<section class="work-container wrap-container">
-  <h3 class="landing-work-header">
-    Work
-  </h3>
-
-<div class="landing-work-featured">
-    <div id="slide-up" class="effects clearfix">
-      <div class="landing-work-featured-project">
-        <div class="landing-work-featured-image">
-          <%= image_tag "feature-middleman.png" %>
-        </div>
-        <div class="featured-work-subtitle-group">
-          <div class="featured-work-subtitle">
-            Middleman Web App
-          </div>
-          <div>
-            thoughtbot 2015
-          </div>
-        </div>
-      </div>
-      <div class="landing-work-featured-project">
-        <div class="landing-work-featured-image">
-          <%= image_tag "feature-flightcar.jpg" %>
-        </div>
-        <div class="featured-work-subtitle-group">
-          <div class="featured-work-subtitle">
-            Flightcar iOS App
-          </div>
-          <div>
-            thoughtbot 2015
-          </div>
-        </div>
-      </div>
-      <div class="landing-work-featured-project">
-        <div class="landing-work-featured-image">
-          <%= image_tag "feature-bumr.jpg" %>
-        </div>
-        <div class="featured-work-subtitle-group">
-          <div class="featured-work-subtitle">
-            BUMR iOS App
-          </div>
-          <div>
-            thoughtbot 2015
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="work-container wrap-container">
-  <h3 class="landing-work-header">
-    Play
-  </h3>
-
-<div class="landing-work-featured">
-    <div id="slide-up" class="effects clearfix">
-      <div class="landing-work-featured-project">
-        <div class="landing-work-featured-image">
-          <%= image_tag "feature-love.png" %>
-        </div>
-        <div class="featured-work-subtitle-group">
-          <div class="featured-work-subtitle">
-            Love is Love Project
-          </div>
-          <div>
-            Personal 2016
-          </div>
-        </div>
-      </div>
-      <div class="landing-work-featured-project">
-        <div class="landing-work-featured-image">
-          <%= image_tag "feature-slackbot.png" %>
-        </div>
-        <div class="featured-work-subtitle-group">
-          <div class="featured-work-subtitle">
-          Nerdbot, a Custom Slackbot
-          </div>
-          <div>
-            Personal 2016
-          </div>
-        </div>
-      </div>
-      <div class="landing-work-featured-project">
-        <div class="landing-work-featured-image">
-          <%= image_tag "feature-minimeet.jpg" %>
-        </div>
-        <div class="featured-work-subtitle-group">
-          <div class="featured-work-subtitle">
-            Swift Prototypes
-          </div>
-          <div>
-            Codepath 2015, 2016
-          </div>
-        </div>
-      </div>
-      <div class="landing-work-featured-project">
-        <div class="landing-work-featured-image">
-          <%= image_tag "feature-giveback.png" %>
-        </div>
-        <div class="featured-work-subtitle-group">
-          <div class="featured-work-subtitle">
-            Project Give Back
-          </div>
-          <div>
-            Personal 2015
-          </div>
-        </div>
-      </div>
-      <div class="landing-work-featured-project">
-        <div class="landing-work-featured-image">
-          <%= image_tag "feature-matching.png" %>
-        </div>
-        <div class="featured-work-subtitle-group">
-          <div class="featured-work-subtitle">
-            Friend Matching
-          </div>
-          <div>
-            Personal 2015
-          </div>
-        </div>
-      </div>
-      <div class="landing-work-featured-project">
-        <div class="landing-work-featured-image">
-          <%= image_tag "feature-illustrations.png" %>
-        </div>
-        <div class="featured-work-subtitle-group">
-          <div class="featured-work-subtitle">
-            Illustrations
-          </div>
-          <div>
-            Personal 2015 - Present
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</section>
+  <ul class="hero-keyboard js-static-load-animations">
+    <% 14.times do %>
+      <li class="hero-keyboard-key">
+      </li>
+    <% end %>
+  </ul>
+</header>

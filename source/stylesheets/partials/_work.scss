@@ -1,7 +1,16 @@
 .work {
 
+  &-intro {
+    text-align: center;
+    margin-bottom: 4em;
+    margin-top: 4em;
+    font-size: 20px;
+  }
+
   &-container {
     padding-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &-subtitle {
@@ -13,7 +22,7 @@
       margin: 100px 0 40px;
     }
   }
-  
+
   &-text {
     @include span-columns(12 of 12);
     float: none;
