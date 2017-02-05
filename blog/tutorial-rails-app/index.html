@@ -10,18 +10,17 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Tutorial: Rails App Setup With Heroku and Github</title>
 
-    <link href="../../stylesheets/normalize-130ad7bd.css" rel="stylesheet" type="text/css" /><link href="../../stylesheets/all-01118f8d.css" rel="stylesheet" type="text/css" />
-    <script src="../../javascripts/all-83964f31.js" type="text/javascript"></script>
+    <link href="/stylesheets/normalize-130ad7bd.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all-901ccb64.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all-83964f31.js" type="text/javascript"></script>
 
     <!-- Blog feed -->
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" />
   </head>
 
-<nav class="global-nav">
-  <section class="wrap-container global-nav-border">
+<nav class="global-nav wrap-container">
   <ul class="nav-menu-left">
     <li>
-      <a class="nav-logo" href="/"><img src="../../images/coffee-froth-large-c510f009.gif" /></a>
+      <a class="nav-logo" href="/"><img src="/images/coffee-froth-large-c510f009.gif" /></a>
     </li>
   </ul>
   <ul class="nav-menu-right">
@@ -41,7 +40,7 @@
   <body class="blog blog_tutorial-rails-app blog_tutorial-rails-app_index">
       <h3 class="post-title">Tutorial: Rails App Setup With Heroku and Github</h3>
       <h5 class="post-date">Apr 25, 2015</h5>
-      <p><img alt="nutella" class="post-image" src="../../images/blog/seven-ounces-screenshot-da974eb5.png" /></p>
+      <p><img alt="nutella" class="post-image" src="/images/blog/seven-ounces-screenshot-da974eb5.png" /></p>
 
 <p>I love how interactive web apps can be, and the amount of creativity and control
 you can have over a system when you know how set it up as an app. However, if
@@ -56,7 +55,7 @@ Ruby on Rails, Git, Github, Heroku, and Heroku Toolbelt.</p>
 
 <p><strong>Ruby On Rails And Github</strong></p>
 
-<p><img alt="rails" class="post-image-inline" src="../../images/blog/rails-1-6c074929.jpg" /></p>
+<p><img alt="rails" class="post-image-inline" src="/images/blog/rails-1-6c074929.jpg" /></p>
 
 <p class="post-inline">
 Ruby on Rails is a great framework that is fantastic for quick prototyping. It’s
@@ -153,11 +152,11 @@ $ git commit -am “created blog scaffold with posts”
 
 <p>First, create a remote repository on Github by clicking on the drop-down in the upper right, next to the “+”. Here’s a screenshot:</p>
 
-<p><img alt="rails" class="post-image-center image-outline" src="../../images/blog/rails-2-903c59bb.png" /></p>
+<p><img alt="rails" class="post-image-center image-outline" src="/images/blog/rails-2-903c59bb.png" /></p>
 
 <p>After you name your repo (mine is just called “testing”), it will tell you what to enter. You’re going to be pushing an existing repository. Here’s a screenshot:</p>
 
-<p><img alt="rails" class="post-image-center image-outline" src="../../images/blog/rails-5-9691c338.png" /></p>
+<p><img alt="rails" class="post-image-center image-outline" src="/images/blog/rails-5-9691c338.png" /></p>
 
 <p>And here’s what you input in your terminal:</p>
 
@@ -173,7 +172,7 @@ git push -u origin master
 
 <h4 id="heroku">Heroku</h4>
 
-<p><img alt="rails" class="post-image-inline" src="../../images/blog/rails-3-2763b88d.png" /></p>
+<p><img alt="rails" class="post-image-inline" src="/images/blog/rails-3-2763b88d.png" /></p>
 
 <p class="post-inline">
 Heroku is a cloud application platform that helps developers build and deploy web apps. It deals with server management, deployment, and scaling.</p>
@@ -229,7 +228,7 @@ end
 
 <p>Tutorials will often tell you that you just need to add gem ‘pg’, but it’s a good idea to make sure you add the version to each of your gems. If you ever need to find that information, search for rubygems.org/gems/[gemname]. For example, if you visit <a href="https://rubygems.org/gems/pg">rubygems.org/gems/pg</a>, scroll down to see the versioned copy. Just click that little clipboard icon and you’re good to go!</p>
 
-<p><img alt="rails" class="post-image-center" src="../../images/blog/rails-4-875588ba.jpg" /></p>
+<p><img alt="rails" class="post-image-center" src="/images/blog/rails-4-875588ba.jpg" /></p>
 
 <p>Then run:</p>
 
@@ -374,91 +373,6 @@ Github</a></li>
   </body>
 <footer>
   <div class="wrap-container">
-  <!-- <ul class="large&#45;column"> -->
-  <!--   <li><h5 class="heading">Recent Articles</h5></li> -->
-  <!--   <li> -->
-  <!--     <ol> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="../top-10-books-of-2016/">Top 10 books of 2016</a> -->
-  <!--           <span>Dec 20</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="../a-bot-to-help-you-read/">A bot to help you read your way through the next 4 years</a> -->
-  <!--           <span>Nov 28</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="../love-is-love/">The loveislove project</a> -->
-  <!--           <span>Nov 14</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="../matching-game/">Friendship Matching Game</a> -->
-  <!--           <span>Dec 28</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="../shortened-design-sprint/">Design is a process: shortened design sprints</a> -->
-  <!--           <span>Jun  3</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="../css-keyboard/">Tutorial: Create an interactive keyboard with HTML and CSS</a> -->
-  <!--           <span>Jun  1</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="../middleman-case-study/">Middleman Case Study</a> -->
-  <!--           <span>May 22</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="../favorite-dribbble-accounts/">10 Illustrated Dribbble Accounts To Follow</a> -->
-  <!--           <span>May 14</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="../xcode-prototyping/">Xcode as a prototyping tool for designers</a> -->
-  <!--           <span>May  1</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--         <li> -->
-  <!--           <a href="../codepath-minimeet/">Codepath's iOS Bootcamp and MiniMeet</a> -->
-  <!--           <span>Apr 28</span> -->
-  <!--         </li> -->
-  <!--        -->
-  <!--     </ol> -->
-  <!--   </li> -->
-  <!-- </ul> -->
-
-  <!-- <ul class="small&#45;column"> -->
-  <!--   <li><h5 class="heading">Tags</h5></li> -->
-  <!--   <li> -->
-  <!--     <ol> -->
-  <!--        -->
-  <!--         <li><a href="/blog/tags/design/">design (10)</a></li> -->
-  <!--        -->
-  <!--         <li><a href="/blog/tags/recipe/">recipe (1)</a></li> -->
-  <!--        -->
-  <!--         <li><a href="/blog/tags/tutorial/">tutorial (1)</a></li> -->
-  <!--        -->
-  <!--         <li><a href="/blog/tags/development/">development (3)</a></li> -->
-  <!--        -->
-  <!--         <li><a href="/blog/tags/round-up/">round-up (1)</a></li> -->
-  <!--        -->
-  <!--         <li><a href="/blog/tags/work/">work (1)</a></li> -->
-  <!--        -->
-  <!--         <li><a href="/blog/tags/side-project/">side project (1)</a></li> -->
-  <!--        -->
-  <!--         <li><a href="/blog/tags/bots/">Bots (1)</a></li> -->
-  <!--        -->
-  <!--         <li><a href="/blog/tags/books/">Books (1)</a></li> -->
-  <!--        -->
-  <!--     </ol> -->
-  <!--   </li> -->
-  <!-- <ul> -->
 
     <div class="footer-main">
       <h4>
@@ -490,7 +404,7 @@ Github</a></li>
         </li>
       </ul>
       <p>
-        © Michelle Venetucci 2015
+        © Michelle Venetucci 2017
       </p>
     </div>
   </div>
