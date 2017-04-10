@@ -29,7 +29,7 @@ $base-z-index: 0;
 $yellow: #E6C163;
 $light-yellow: #F6F5F0;
 $white: #ffffff;
-$green: #9CBB71;
+$green: #4bbb8e;
 
 // Brand Colors
 $base-background-color: $yellow;
@@ -55,4 +55,3 @@ $base-border: 1px solid $base-border-color;
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
-

@@ -1,26 +1,263 @@
 ---
 title: Michelle Venetucci Harvey
 ---
-<%= partial "layouts/partials/landing-nav" %>
 
-<header class="hero">
-  <%= image_tag "hero-laptop.png", class: "js-load-animations hero-laptop" %>
-  <%= image_tag "hero-desktop.png", class: "js-load-animations hero-desktop" %>
-  <%= image_tag "coffee-froth.gif", class: "js-load-animations hero-coffee" %>
-  <%= image_tag "hero-phone.png", class: "js-load-animations hero-phone" %>
-  <%= image_tag "mouse.png", class: "js-load-animations hero-mouse" %>
-  <div class="hero-text js-static-load-animations">
-    <h1 class="hero-title">
-      Michelle Venetucci Harvey
-    </h1>
-    <h3 class="hero-subtitle">
-      Pixel pusher and indoor enthusiast, currently a Product Designer at <a href="https://www.lyft.com/" target="_blank">Lyft</a>.
-    </h3>
+<%= partial "layouts/partials/nav" %>
+<div role="main" class="main-container">
+<!-- <section class="body-content-container"> -->
+<section class="work-container wrap-container">
+  <div class="work-intro">
+    <b>I'm Michelle, a Product Designer in San Francisco</b> </br>
+    Pixel pusher and indoor enthusiast, currently a Product Designer at Lyft
   </div>
-  <ul class="hero-keyboard js-static-load-animations">
-    <% 14.times do %>
-      <li class="hero-keyboard-key">
-      </li>
-    <% end %>
-  </ul>
-</header>
+</section>
+
+<section class="work-container wrap-container">
+  <h3 class="landing-work-header">
+    Work
+  </h3>
+
+
+<div class="landing-work-featured">
+    <div id="slide-up" class="effects clearfix">
+      <a href="/work/middleman" class="landing-work-featured-project">
+        <div class="landing-work-featured-image">
+          <%= image_tag "feature-middleman.png" %>
+        </div>
+        <div class="featured-work-subtitle-group">
+          <div class="featured-work-subtitle">
+            Middleman Documentation Site
+          </div>
+          <div>
+            thoughtbot 2015
+          </div>
+        </div>
+      </a>
+      <a href="/work/flightcar" class="landing-work-featured-project">
+        <div class="landing-work-featured-image">
+          <%= image_tag "feature-flightcar.jpg" %>
+        </div>
+        <div class="featured-work-subtitle-group">
+          <div class="featured-work-subtitle">
+            Flightcar iOS App
+          </div>
+          <div>
+            thoughtbot 2015
+          </div>
+        </div>
+      </a>
+      <a href="/work/bumr" class="landing-work-featured-project">
+        <div class="landing-work-featured-image">
+          <%= image_tag "feature-bumr.jpg" %>
+        </div>
+        <div class="featured-work-subtitle-group">
+          <div class="featured-work-subtitle">
+            BUMR iOS App
+          </div>
+          <div>
+            thoughtbot 2015
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="work-container wrap-container">
+  <h3 class="landing-work-header">
+    Play
+  </h3>
+
+<div class="landing-work-featured">
+    <div id="slide-up" class="effects clearfix">
+      <a href="/work/love" class="landing-work-featured-project">
+        <div class="landing-work-featured-image">
+          <%= image_tag "feature-love.png" %>
+        </div>
+        <div class="featured-work-subtitle-group">
+          <div class="featured-work-subtitle">
+            Love is Love Project
+          </div>
+          <div>
+            Personal 2016
+          </div>
+        </div>
+      </a>
+      <a href="/work/nerdbot" class="landing-work-featured-project">
+        <div class="landing-work-featured-image">
+          <%= image_tag "feature-slackbot.png" %>
+        </div>
+        <div class="featured-work-subtitle-group">
+          <div class="featured-work-subtitle">
+          Nerdbot, a Custom Slackbot
+          </div>
+          <div>
+            Personal 2016
+          </div>
+        </div>
+      </a>
+      <a href="/work/swift" class="landing-work-featured-project">
+        <div class="landing-work-featured-image">
+          <%= image_tag "feature-minimeet.jpg" %>
+        </div>
+        <div class="featured-work-subtitle-group">
+          <div class="featured-work-subtitle">
+            Swift Prototypes
+          </div>
+          <div>
+            Codepath 2015, 2016
+          </div>
+        </div>
+      </a>
+      <a href="/work/giveback" class="landing-work-featured-project">
+        <div class="landing-work-featured-image">
+          <%= image_tag "feature-giveback.png" %>
+        </div>
+        <div class="featured-work-subtitle-group">
+          <div class="featured-work-subtitle">
+            Project Give Back
+          </div>
+          <div>
+            Personal 2015
+          </div>
+        </div>
+      </a>
+      <a href="/work/matching" class="landing-work-featured-project">
+        <div class="landing-work-featured-image">
+          <%= image_tag "feature-matching.png" %>
+        </div>
+        <div class="featured-work-subtitle-group">
+          <div class="featured-work-subtitle">
+            Friend Matching
+          </div>
+          <div>
+            Personal 2015
+          </div>
+        </div>
+      </a>
+      <a href="/work/illustrations" class="landing-work-featured-project">
+        <div class="landing-work-featured-image">
+          <%= image_tag "feature-illustrations.png" %>
+        </div>
+        <div class="featured-work-subtitle-group">
+          <div class="featured-work-subtitle">
+            Illustrations
+          </div>
+          <div>
+            Personal 2015 - Present
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- </section> -->
+
+<section class="work-container wrap-container">
+  <h3 class="landing-work-header">
+    Writing
+  </h3>
+
+<div class="landing-work-featured">
+    <div id="slide-up" class="effects clearfix">
+      <a href="https://medium.com/@venetucci/sincerely-the-tech-industry-cb7de7449351" target="_blank" class="landing-work-featured-project-full">
+        <div class="landing-work-featured-image-full">
+          <%= image_tag "feature-aws.png" %>
+        </div>
+        <div class="featured-work-subtitle-group-full">
+          <div class="featured-work-subtitle">
+            Sincerely, the tech industry
+          </div>
+          <div>
+            What to say to your all-girls high school when it starts using tech industry tactics
+          </div>
+          <div class="featured-work-body">
+            In the world of Silicon Valley, I have a rather unique background: I graduated from an all girls high school. Attending Annie Wright was an incredible opportunity that gave me the foundation for...
+          </div>
+        </div>
+      </a>
+      <a href="https://medium.com/@venetucci/a-bot-to-help-you-read-your-way-through-next-4-years-7ba9d80066fc" target="_blank" class="landing-work-featured-project-full">
+        <div class="landing-work-featured-image-full">
+          <%= image_tag "feature-slackbot-writing.png" %>
+        </div>
+        <div class="featured-work-subtitle-group-full">
+          <div class="featured-work-subtitle">
+            A bot to help you read your way through the next 4 years
+          </div>
+          <div>
+            Tutorial for using Google Spreadsheets and Slack to create a collaborative reading group
+          </div>
+          <div class="featured-work-body">
+            Since the election, there’s been a noticeable uptick in activism and engagement around important issues that shape our country. A lot of people in more liberal communities woke up to the fact that...
+          </div>
+        </div>
+      </a>
+      <a href="/blog/shortened-design-sprint/" class="landing-work-featured-project-full">
+        <div class="landing-work-featured-image-full">
+          <%= image_tag "feature-sprints.png" %>
+        </div>
+        <div class="featured-work-subtitle-group-full">
+          <div class="featured-work-subtitle">
+            Design is a process
+          </div>
+          <div>
+            Shortened design sprints
+          </div>
+          <div class="featured-work-body">
+            I’ve been wanting to write a post about design processes for a while now. I wrote a full case study about a specific design sprint at thoughtbot, which you can view here, but I wanted to continue the...
+          </div>
+        </div>
+      </a>
+      <a href="https://robots.thoughtbot.com/ios-coaching-product-design-sprint" target="_blank" class="landing-work-featured-project-full">
+        <div class="landing-work-featured-image-full">
+          <%= image_tag "feature-ios-sprint.png" %>
+        </div>
+        <div class="featured-work-subtitle-group-full">
+          <div class="featured-work-subtitle">
+            Design Sprint Case Study
+          </div>
+          <div>
+            iOS Coaching at thoughtbot
+          </div>
+          <div class="featured-work-body">
+            Recently, thoughtbot started experimenting with offering one-on-one remote iOS coaching sessions as a service. After sending out a tweet asking if anyone would be interested and receiving positive...
+          </div>
+        </div>
+      </a>
+      <a href="/blog/css-keyboard/" class="landing-work-featured-project-full">
+        <div class="landing-work-featured-image-full">
+          <%= image_tag "landing-keyboard.gif" %>
+        </div>
+        <div class="featured-work-subtitle-group-full">
+          <div class="featured-work-subtitle">
+            Tutorial: Create an interactive keyboard with HTML and CSS
+          </div>
+          <div>
+            Playing around with CSS animations
+          </div>
+          <div class="featured-work-body">
+            For the landing page of this website, I thought it would be fun to create some of my illustrations in erb and SCSS so they could be more fun and interactive. Today, I wanted to share a brief...
+          </div>
+        </div>
+      </a>
+      <a href="https://robots.thoughtbot.com/xcode-as-a-prototyping-tool-for-designers" target="_blank" class="landing-work-featured-project-full">
+        <div class="landing-work-featured-image-full">
+          <%= image_tag "feature-xcode-prototype.gif" %>
+        </div>
+        <div class="featured-work-subtitle-group-full">
+          <div class="featured-work-subtitle">
+            Xcode as a Prototyping Tool for Designers
+          </div>
+          <div>
+            Cutting down on designer / engineering translating
+          </div>
+          <div class="featured-work-body">
+            There are a lot of prototyping tools out there for designers. Some of our favorites include Framer.js, Pixate, Flinto, and Invision, all of which provide different ways for designers to show...
+          </div>
+        </div>
+      </a>
+    </div>
+</div>
+</section>
+</div>
